@@ -1,0 +1,66 @@
+{
+    "id": {
+      "type": "String"
+    },
+    "type": {
+      "type": "String"
+    },
+    "password": {
+      "type": "String"
+    },
+    "nom": {
+      "type": "String"
+    },
+    "prenom": {
+      "type": "String"
+    },
+    "Questionnaires": {
+      "type": "JsonObject",
+      "properties": {
+    
+        "monProgrammeEtudes": {
+        "type": ["JsonObject"],
+        "properties": {
+            "id": {
+            "type": "String"
+            },
+            "type": {
+            "type": "String"
+            },
+            "reponse": {
+            "type": "String"
+            }
+        }
+        },
+        "monChoixProgramme": {
+        "type": "JsonObject",
+        "properties": {
+            "type": {
+            "type": "String"
+            },
+            "reponsesPositives": {
+            "type": ["String"]
+            },
+            "reponsesNegatives": {
+            "type": ["String"]
+            }
+        }
+        },
+        "moyensPourReussir": {
+        "type": "JsonObject",
+        "properties": {
+            "type": {
+            "type": "String"
+            },
+            "actionReponses": {
+            "type": ["String"]
+            },
+            "ressourcesReponses": {
+            "type": ["String"]
+            }
+        }
+        }
+    }
+    }
+}
+  

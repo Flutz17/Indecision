@@ -1,0 +1,83 @@
+[
+    {
+    "id": "001",	
+    "type" : "I",
+    "action": "J'ai des aptitudes variées qui me font encore hésiter dans le choix de mon programme."
+    },
+    {
+    "id": "002",	
+    "type" : "I",
+    "action": "Depuis que j'ai commencé mon programme d'études, mes intérêts à la carrière ont changé."
+    },
+    {
+    "id": "003",	
+    "type" : "I",
+    "action": "Mon choix de programme ne repose pas sur des expériences de travail ou des expériences personnelles que j'ai vécues."
+    },
+    {
+    "id": "004",	
+    "type" : "I",
+    "action": "Je ne me connais pas suffisamment pour être certain que j'ai fait le bon choix de programme."
+    },
+    {
+    "id": "005",	
+    "type" : "I",
+    "action": "Le programme que j'ai choisi ne correspond pas à mes principales exigences face à un emploi."
+    },
+
+
+
+    {
+    "id": "006",	
+    "type" : "S",
+    "action": "Certaines personnes qui me sont chères sont d'avis que le choix de programme que j'ai fait ne me convient pas."
+    },
+    {
+    "id": "007",	
+    "type" : "S",
+    "action": "Je me sens mal à l'aise de rencontrer mes professeurs afin de leur parler de mon questionnement par rapport à mon choix de carrière."
+    },
+    {
+    "id": "008",	
+    "type" : "S",
+    "action": "Je ne peux pas compter sur le soutien de mes proches pour m'encourager à réussir mes études."
+    },
+    {
+    "id": "009",	
+    "type" : "S",
+    "action": "Les personnes qui me sont importantes ne portent pas intérêt à ce que je fais dans mes cours."
+    },
+    {
+    "id": "010",	
+    "type" : "S",
+    "action": "Je ne sens pas que mes amis m'encouragent à réussir mes études."
+    },
+
+
+    {
+    "id": "011",	
+    "type" : "M",
+    "action": "Je suis inquiète de ne pas me trouver de l'emploi dans la carrière que j'ai choisie."
+    },
+    {
+    "id": "012",	
+    "type" : "M",
+    "action": "J'aimerais me spécialiser après l'obtention de mon diplôme (DEC), mais je manque d'information concernant les différentes spécialités du niveau collégial ou les orientations universitaires."
+    },
+    {
+    "id": "013",	
+    "type" : "M",
+    "action": "Depuis le début de la session, je n'ai pas eu suffisamment d'informations sur ce que font les travailleurs dans mon programme."
+    },
+    {
+    "id": "014",	
+    "type" : "M",
+    "action": "Je pense qu'il est irréaliste pour moi de développer les attitudes exigées par la profession, d'ici la fin de mon programme."
+    },
+    {
+    "id": "015",	
+    "type" : "M",
+    "action": "Les conférences, les visites, les stages d'observations et/ou la rencontre avec les travailleurs de mon domaine m'ont amené à remettre en question mon choix de programme."
+    },
+
+]

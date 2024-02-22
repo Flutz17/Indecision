@@ -1,0 +1,11 @@
+{
+    "id": {
+        "type": "String"
+    },
+    "type": {
+        "type": "String"
+    },
+    "action": {
+        "type": "String"
+    }
+}

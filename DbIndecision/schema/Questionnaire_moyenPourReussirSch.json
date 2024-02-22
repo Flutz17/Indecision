@@ -1,0 +1,32 @@
+{
+    "titre": {
+        "type": "String"
+    },
+    "sousTitre": {
+        "type": "String"
+    },
+    "instruction": {
+        "type": "String"
+    },
+    "piedPage": {
+        "type": "String"
+    },
+    "questionsMoyensReussite": {
+        "type": ["jsonObject"],
+        "properties": {
+
+            "facteur": {
+                "type": "String"
+            },
+            "titre": {
+                "type": "String"
+            },
+            "actions": {
+                "type": "String"
+            },
+            "ressources": {
+                "type": "String"
+            }
+    }
+    }
+}

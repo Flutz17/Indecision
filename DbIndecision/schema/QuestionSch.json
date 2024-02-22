@@ -1,0 +1,14 @@
+{
+    "id": {
+        "type": "String"
+    },
+    "type": {
+        "type": "String"
+    },
+    "titre": {
+        "type": "String"
+    },
+    "question": {
+        "type": "String"
+    }
+}
