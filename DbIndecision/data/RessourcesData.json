@@ -7,12 +7,12 @@
     {
     "id": "002",	
     "type" : "G",
-    "ressource": "Consulter le livre 'Oubliez la gestion du temps, gérez vos priorités' de François Lavallée disponible à la bibliothèque : kttps://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=126285"
+    "ressource": "Consulter le livre 'Oubliez la gestion du temps, gérez vos priorités' de François Lavallée disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=126285"
     },
     {
     "id": "003",	
     "type" : "G",
-    "ressource": "Consulter le livre 'Petit guide de survie des étudiants' de Marie Lambert-Chan disponible à la bibliothèque : kttps://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=58311"
+    "ressource": "Consulter le livre 'Petit guide de survie des étudiants' de Marie Lambert-Chan disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=58311"
     },
     {
     "id": "004",	
@@ -29,22 +29,22 @@
     {
     "id": "006",	
     "type" : "M",
-    "ressource": "Consulter le livre 'Décrocher son diplóme (et l'emploi de ses rêves!): comment maîtriser les compétences essentielles menant au succès à l'école, au travail et dans la vie' disponible à la bibliothèque : kttps://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=126958"
+    "ressource": "Consulter le livre 'Décrocher son diplóme (et l'emploi de ses rêves!): comment maîtriser les compétences essentielles menant au succès à l'école, au travail et dans la vie' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=126958"
     },
     {
     "id": "007",	
     "type" : "M",
-    "ressource": "Consulter le livre 'La méthode infaillible pour réussir vos études' disponible à la bibliothèque : kttps://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=114790"
+    "ressource": "Consulter le livre 'La méthode infaillible pour réussir vos études' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=114790"
     },
     {
     "id": "008",	
     "type" : "M",
-    "ressource": "Consulter le livre 'l'essentiel pour reussir ses études' disponible à la bibliothèque : kttps://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=127017"
+    "ressource": "Consulter le livre 'l'essentiel pour reussir ses études' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=127017"
     },
     {
     "id": "009",	
     "type" : "M",
-    "ressource": "Consulter le livre 'La prise de notes efficace pour étudiants : Des notes inteligentes et opérationnelles !' disponible à la bibliothèque : kttps://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=154249"
+    "ressource": "Consulter le livre 'La prise de notes efficace pour étudiants : Des notes inteligentes et opérationnelles !' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=154249"
     },
     {
     "id": "010",	
@@ -56,22 +56,22 @@
     {
     "id": "011",	
     "type" : "S",
-    "ressource": "Consulter le livre :'Mindfulness : apprivoiser le stress par la pleine conscience : une introduction aux approches basées sur la pleine conscience' disponible à la bibliothèque : kttps://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=54311"
+    "ressource": "Consulter le livre :'Mindfulness : apprivoiser le stress par la pleine conscience : une introduction aux approches basées sur la pleine conscience' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=54311"
     },
     {
     "id": "012",	
     "type" : "S",
-    "ressource": "Consulter le livre :'Pourquoi je stresse : les 6 couleurs de mon stress.' disponible à la bibliothèque : kttps://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=62531"
+    "ressource": "Consulter le livre :'Pourquoi je stresse : les 6 couleurs de mon stress.' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=62531"
     },
     {
     "id": "013",	
     "type" : "S",
-    "ressource": "Consulter le livre :'Communiquer en public sans anxiété' disponible à la bibliothèque : kttps://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=151749"
+    "ressource": "Consulter le livre :'Communiquer en public sans anxiété' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=151749"
     },
     {
     "id": "014",	
     "type" : "S",
-    "ressource": "Consulter le livre :'Les 5 clés pour se libérer du stress.' disponible à la bibliothèque : kttps://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=154869"
+    "ressource": "Consulter le livre :'Les 5 clés pour se libérer du stress.' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=154869"
     },
     {
     "id": "015",	
@@ -83,5 +83,127 @@
     "type" : "S",
     "ressource": "Demander à mon API de consulter le guide 'Les exposés oraux'"
     },
-    
+
+
+
+    {
+    "id": "017",	
+    "type" : "I",
+    "ressource": "Consulter le livre :'Savoir s'affirmer en toutes circonstances.' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=54511"
+    },
+    {
+    "id": "018",	
+    "type" : "I",
+    "ressource": "Consulter le livre :'Affirmez-vous : pour mieux vivre avec les autres' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=24921"
+    },
+    {
+    "id": "019",	
+    "type" : "I",
+    "ressource": "Consulter le livre :'S'affirmer pour changer : cheminer vers l'assertivité et l'affirmation de soi.' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=163022"
+    },
+    {
+    "id": "020",	
+    "type" : "I",
+    "ressource": "Consulter Marie-Josée Henry ou Suzanne Marquis au Centre de santé G-206"
+    },
+    {
+    "id": "021",	
+    "type" : "I",
+    "ressource": "Consulter un conseiller au service de consultation (B-157)"
+    },
+
+
+    {
+    "id": "022",	
+    "type" : "O",
+    "ressource": "Entreprendre une démarche d'orientation avec une conseillère d'orientation du service de consultation"
+    },
+    {
+    "id": "023",	
+    "type" : "O",
+    "ressource": "Consulter le centre de documentation du service de consultation au B-157"
+    },
+    {
+    "id": "024",	
+    "type" : "O",
+    "ressource": "Consulter le site Internet du Collège (www.cegep-rdl.qc.ca) à Carrière et emplois, ensuite des sites 'carrières'. Une panoplie d'information est à ma disposition (liens vers les sites Web des établissements d'enseignement postsecondaire et des liens vers des sites d'exploration de carrières et du marché du travail)"
+    },
+    {
+    "id": "025",	
+    "type" : "O",
+    "ressource": "Discuter avec mes professeurs de mon orientation de carrière (débouchés du programme de formation dans lequel je me suis inscris, etc.)"
+    },
+    {
+    "id": "026",	
+    "type" : "O",
+    "ressource": "Consulter le livre: Bien choisir sa trajectoire professionnelle. Disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=123237"
+    },
+    {
+    "id": "027",	
+    "type" : "O",
+    "ressource": "Consulter le livre: Et si je trouvais enfin ce que je veux faire de ma vie?: Mon carnet orientation & vocation. Les 20 questions à te poser pour trouver et prendre ta place professionnellement. Disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=88865322"
+    },
+
+
+    {
+    "id": "028",	
+    "type" : "T",
+    "ressource": "Consulter Marie-Josée Henry ou Suzanne Marquis au Centre de santé G-206: Si j'ai de la difficulté à briser mon isolement."
+    },
+    {
+    "id": "029",	
+    "type" : "T",
+    "ressource": "Consulter le Service de consultation au B-157: Si j'ai de la difficulté à m'adapter aux études collégiales."
+    },
+    {
+    "id": "030",	
+    "type" : "T",
+    "ressource": "Consulter le centre sportif: Information et inscription à des activités parascolaires (Stéphane Lebrun, D-019)."
+    },
+    {
+    "id": "031",	
+    "type" : "T",
+    "ressource": "Faire appel à Francois Provost (G-004), responsable de la vie étudiante: Pour connaître les activités étudiantes régulières."
+    },
+    {
+    "id": "032",	
+    "type" : "T",
+    "ressource": "Consulter les renseignements utiles disponibles dans l'agenda."
+    },
+    {
+    "id": "033",	
+    "type" : "T",
+    "ressource": "L'AGE du collège: Divers comités et services à ta disposition."
+    },
+    {
+    "id": "034",	
+    "type" : "T",
+    "ressource": "Rendre visite à l'animateur de pastorale Guy Paradis (G-035)."
+    },
+
+
+
+    {
+    "id": "035",	
+    "type" : "P",
+    "ressource": "Consulter le Service de consultation au B-157: personne ressources et exercices."
+    },
+    {
+    "id": "036",	
+    "type" : "P",
+    "ressource": "Demander à mon API de consulter le guide 'La motivation'"
+    },
+
+
+
+    {
+    "id": "037",	
+    "type" : "E",
+    "ressource": "Prendre rendez-vous avec mon API."
+    },
+    {
+    "id": "038",	
+    "type" : "E",
+    "ressource": "Demander à mon API de consulter le guide 'Surmonter la procrastination scolaire'"
+    },
 ]

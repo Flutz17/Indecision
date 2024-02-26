@@ -2,27 +2,27 @@
     {
     "id": "001",	
     "type" : "I",
-    "action": "J'ai des aptitudes variées qui me font encore hésiter dans le choix de mon programme."
+    "question": "J'ai des aptitudes variées qui me font encore hésiter dans le choix de mon programme."
     },
     {
     "id": "002",	
     "type" : "I",
-    "action": "Depuis que j'ai commencé mon programme d'études, mes intérêts à la carrière ont changé."
+    "question": "Depuis que j'ai commencé mon programme d'études, mes intérêts à la carrière ont changé."
     },
     {
     "id": "003",	
     "type" : "I",
-    "action": "Mon choix de programme ne repose pas sur des expériences de travail ou des expériences personnelles que j'ai vécues."
+    "question": "Mon choix de programme ne repose pas sur des expériences de travail ou des expériences personnelles que j'ai vécues."
     },
     {
     "id": "004",	
     "type" : "I",
-    "action": "Je ne me connais pas suffisamment pour être certain que j'ai fait le bon choix de programme."
+    "question": "Je ne me connais pas suffisamment pour être certain que j'ai fait le bon choix de programme."
     },
     {
     "id": "005",	
     "type" : "I",
-    "action": "Le programme que j'ai choisi ne correspond pas à mes principales exigences face à un emploi."
+    "question": "Le programme que j'ai choisi ne correspond pas à mes principales exigences face à un emploi."
     },
 
 
@@ -30,54 +30,220 @@
     {
     "id": "006",	
     "type" : "S",
-    "action": "Certaines personnes qui me sont chères sont d'avis que le choix de programme que j'ai fait ne me convient pas."
+    "question": "Certaines personnes qui me sont chères sont d'avis que le choix de programme que j'ai fait ne me convient pas."
     },
     {
     "id": "007",	
     "type" : "S",
-    "action": "Je me sens mal à l'aise de rencontrer mes professeurs afin de leur parler de mon questionnement par rapport à mon choix de carrière."
+    "question": "Je me sens mal à l'aise de rencontrer mes professeurs afin de leur parler de mon questionnement par rapport à mon choix de carrière."
     },
     {
     "id": "008",	
     "type" : "S",
-    "action": "Je ne peux pas compter sur le soutien de mes proches pour m'encourager à réussir mes études."
+    "question": "Je ne peux pas compter sur le soutien de mes proches pour m'encourager à réussir mes études."
     },
     {
     "id": "009",	
     "type" : "S",
-    "action": "Les personnes qui me sont importantes ne portent pas intérêt à ce que je fais dans mes cours."
+    "question": "Les personnes qui me sont importantes ne portent pas intérêt à ce que je fais dans mes cours."
     },
     {
     "id": "010",	
     "type" : "S",
-    "action": "Je ne sens pas que mes amis m'encouragent à réussir mes études."
+    "question": "Je ne sens pas que mes amis m'encouragent à réussir mes études."
     },
 
 
     {
     "id": "011",	
     "type" : "M",
-    "action": "Je suis inquiète de ne pas me trouver de l'emploi dans la carrière que j'ai choisie."
+    "question": "Je suis inquiète de ne pas me trouver de l'emploi dans la carrière que j'ai choisie."
     },
     {
     "id": "012",	
     "type" : "M",
-    "action": "J'aimerais me spécialiser après l'obtention de mon diplôme (DEC), mais je manque d'information concernant les différentes spécialités du niveau collégial ou les orientations universitaires."
+    "question": "J'aimerais me spécialiser après l'obtention de mon diplôme (DEC), mais je manque d'information concernant les différentes spécialités du niveau collégial ou les orientations universitaires."
     },
     {
     "id": "013",	
     "type" : "M",
-    "action": "Depuis le début de la session, je n'ai pas eu suffisamment d'informations sur ce que font les travailleurs dans mon programme."
+    "question": "Depuis le début de la session, je n'ai pas eu suffisamment d'informations sur ce que font les travailleurs dans mon programme."
     },
     {
     "id": "014",	
     "type" : "M",
-    "action": "Je pense qu'il est irréaliste pour moi de développer les attitudes exigées par la profession, d'ici la fin de mon programme."
+    "question": "Je pense qu'il est irréaliste pour moi de développer les attitudes exigées par la profession, d'ici la fin de mon programme."
     },
     {
     "id": "015",	
     "type" : "M",
-    "action": "Les conférences, les visites, les stages d'observations et/ou la rencontre avec les travailleurs de mon domaine m'ont amené à remettre en question mon choix de programme."
+    "question": "Les conférences, les visites, les stages d'observations et/ou la rencontre avec les travailleurs de mon domaine m'ont amené à remettre en question mon choix de programme."
     },
+
+
+    {
+    "id": "016",	
+    "type" : "O",
+    "question": "Je ne pense pas être en mesure de répondre aux exigences des travaux que mon programme demande."
+    },
+    {
+    "id": "017",	
+    "type" : "O",
+    "question": "Depuis que j'ai commencé mon programme, j'ai de la difficulté à apprendre et à retenir ce qu'on m'enseigne."
+    },
+    {
+    "id": "018",	
+    "type" : "O",
+    "question": "Je ne mets pas les efforts nécessaires dans mes études pour maintenir les résultats que je souhaite."
+    },
+    {
+    "id": "019",	
+    "type" : "O",
+    "question": "Jusqu'à présent, je ne suis pas satisfait(e) de mes résultats."
+    },
+    {
+    "id": "020",	
+    "type" : "O",
+    "question": "Je ne demande pas d'aide lorsque je n'arrive pas à comprendre par moi-même."
+    },
+
+
+    {
+    "id": "021",	
+    "type" : "C",
+    "question": "Depuis que j'ai commencé mon programme, je ne suis plus certain(e) d'être dans le bon domaine."
+    },
+    {
+    "id": "022",	
+    "type" : "C",
+    "question": "Le choix de carrière que j'ai fait ne correspond pas entièrement à mes attentes."
+    },
+    {
+    "id": "023",	
+    "type" : "C",
+    "question": "Malgré le fait que je sois inscrit dans un programme d'études, plusieurs autres programmes m'intéressent toujours."
+    },
+    {
+    "id": "024",	
+    "type" : "C",
+    "question": "Je ne vois pas comment le programme dans lequel je suis inscrit(e) va me préparer à la carrière que je souhaite faire."
+    },
+    {
+    "id": "025",	
+    "type" : "C",
+    "question": "J'ai l'impression de perdre mon temps car je ne vois pas la pertinence de certains cours reliés à mon programme."
+    },
+
+
+    {
+    "id": "026",	
+    "type" : "T",
+    "question": "J'ai de la difficulté à m'intégrer aux autres élèves du programme."
+    },
+    {
+    "id": "027",	
+    "type" : "T",
+    "question": "La vie en appartement ou à la résidence ou à la maison familiale est désagréable pour moi."
+    },
+    {
+    "id": "028",	
+    "type" : "T",
+    "question": "Je ne retrouve pas au Cégep des activités pour me permettre de me réaliser au niveau personnel."
+    },
+    {
+    "id": "029",	
+    "type" : "T",
+    "question": "La transition entre le secondaire et le collégial est ardue pour moi."
+    },
+    {
+    "id": "030",	
+    "type" : "T",
+    "question": "J'ai de la difficulté à me prendre en charge et à suivre le rythme des études collégiales."
+    },
+
+
+    {
+    "id": "031",	
+    "type" : "D",
+    "question": "De façon générale dans ma vie, j'ai de la difficulté à prendre une décision."
+    },
+    {
+    "id": "032",	
+    "type" : "D",
+    "question": "J'ai besoin d'être rassuré(e) par un conseiller d'orientation que mon choix de programme est le bon pour moi."
+    },
+    {
+    "id": "033",	
+    "type" : "D",
+    "question": "En général, j'éprouve de la difficulté à savoir ce qui me convient."
+    },
+    {
+    "id": "034",	
+    "type" : "D",
+    "question": "La plupart du temps, je garde pour moi ce que je ressens."
+    },
+    {
+    "id": "035",	
+    "type" : "D",
+    "question": "Depuis que j'ai commencé mon programme d'études, j'ai moins confiance en moi et en mes capacités."
+    },
+
+
+    {
+    "id": "036",	
+    "type" : "E",
+    "question": "Pour le moment, mon projet d'études n'est pas le principal projet que je veux réaliser."
+    },
+    {
+    "id": "037",	
+    "type" : "E",
+    "question": "J'ai des responsabilités à l'extérieur du cégep qui occupent beaucoup de mon temps en plus de mes études."
+    },
+    {
+    "id": "038",	
+    "type" : "E",
+    "question": "T'estime que mes activités parascolaires occupent trop de temps par rapport à mes études."
+    },
+    {
+    "id": "039",	
+    "type" : "E",
+    "question": "J'estime que mes activités avec mon groupe d'amis occupent trop de temps par rapport à mes études."
+    },
+    {
+    "id": "040",	
+    "type" : "E",
+    "question": "J'ai un projet à l'extérieur du cégep qui remet en question la poursuite de mon programme."
+    },
+
+    {
+    "id": "041",	
+    "type" : "X",
+    "question": "J'ai une difficulté personnelle qui nuit à mes études."
+    },
+    {
+    "id": "042",	
+    "type" : "X",
+    "question": "J'ai une difficulté financière qui m'empêche de me concentrer dans mes études."
+    },
+    {
+    "id": "043",	
+    "type" : "X",
+    "question": "J'ai une difficulté de relation avec les autres."
+    },
+    {
+    "id": "044",	
+    "type" : "X",
+    "question": "Je fais une consommation abusive d'alcool ou de drogue qui nuit à mes études."
+    },
+    {
+    "id": "045",	
+    "type" : "X",
+    "question": "J'ai un problème de santé qui nuit à mes études."
+    },
+    {
+    "id": "046",	
+    "type" : "X",
+    "question": "Je me reconnais comme une personne qui pourrait changer de programme."
+    }
 
 ]
