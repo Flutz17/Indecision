@@ -1,0 +1,154 @@
+[
+    {
+    "titre": "Mon programme d'études est-il un choix significatif pour moi?",
+    "directive":{
+        "titre": "Objectifs de la rencontre :",
+        "objectif": ["Faire le point sur ma situation personnelle depuis le début de mes études collègiales.", "Identifier les facteurs pouvant mener à l'indécision vocationnelle par rapport à mon choix de programe.","Avoir des pistes pour diminuer l'inconfort, l'incertitude et apporter des changements."]
+    },
+    "piedPage": "Aide pédagogique individuelle Service de consultation Cégep de Rivière-du-loup",
+    "questionsProgrammeEtudes":[{
+        "type": "T",
+        "id": "001",
+        "titre": "Cégep",
+        "soustitre": "transition secondaire-collégial",
+        "questions":[{
+            "id": "001",
+            "enonce": "Il y a de nombreuses différences entre le secondaire et le collégial."
+        },
+        {
+            "id": "002",
+            "enonce": "-Comment est-ce que je vis ces changements?"
+        },
+        {
+            "id": "003",
+            "enonce": "-Est-ce que je vis également des changements dans ma vie personnelle et sociale?"
+        }
+        ]
+    },
+    {
+        "type": "S",
+        "id": "002",
+        "titre": "Soutien",
+        "soustitre": "famille, amis & enseignants",
+        "questions":[{
+            "id": "004",
+            "enonce": "Mes amis, mes proches et mes enseignants me soutiennent-ils?"
+        },
+        {
+            "id": "005",
+            "enonce": "Croient-ils en moi et en mon projet?"
+        }
+        ]
+    },
+    {
+        "type": "I",
+        "id": "003",
+        "titre": "Identité professionnelle",
+        "soustitre": "Mon choix de programme est-il directement en lien avec mes intérêts, mes valeurs et aptitudes?",
+        "questions":[{
+            "id": "006",
+            "enonce": "Est-ce que je ressens que mon programme fait du sens pour moi? Est-il possible pour moi d'envisager de travailler dans ce domaine et d'en retirer une satisfaction personnelle? Ai-je le profil du diplômé?"
+        },
+        {
+            "id": "007",
+            "enonce": "J'aime:"
+        },
+        {
+            "id": "008",
+            "enonce": "Je suis capable de:"
+        },
+        {
+            "id": "009",
+            "enonce": "Ce qui est important pour moi, c'est:"
+        },
+        {
+            "id": "010",
+            "enonce": "je suis motivé par:"
+        }
+        ]
+    },
+    {
+        "type": "M",
+        "id": "004",
+        "titre": "Métier",
+        "soustitre": "Connaissance de la profession et du marché du travail",
+        "questions":[{
+            "id": "011",
+            "enonce": "Depuis le debut de la session, mes enseignants m'ont présenté le contenu des cours du programme, j'ai visité des services de garde, j'ai fait des observations au centre de la petite enfance 'Le Jardin'. De plus, j'ai entendu des témoignages (parents et enfants) et effectué des travaux pratiques dans le cours d'introduction à la profession."
+        },
+        {
+            "id": "012",
+            "enonce": "Ce que je pense du métier est positif ou négatif? Pourquoi?"
+        }
+        ]
+    },
+    {
+        "type": "O",
+        "id": "005",
+        "titre": "Cheminement et cours",
+        "soustitre": "Efficaté personnelle dans le métier d'étudiant",
+        "questions":[{
+            "id": "013",
+            "enonce": "Quel est mon degré d'aisance face à la charge de travail et aux exigences demandées? Est-ce que je me sens capable de réussir? Suis-je prêt à m'investir et à fournir les efforts nécessaires pour réussir mes cours? Est-ce que j'utilise les bonnes méthodes de travail pour moi? Ai-je recours aux enseignants lorsque je ne comprend pas? Ai-je besoin de m'adapter à l'approche pédagogique utilisée dans certains cours?"
+        }
+        ]
+    },
+    ]
+    }
+]
+
+
+
+
+
+
+{
+    "titre": {
+        "type": "String"
+    },
+    "directive": {
+        "type": "jsonObject",
+        "properties": {
+
+            "titre": {
+                "type": "String"
+            },
+            "objectif": {
+                "type": ["String"]
+            }
+    }
+    },
+    "piedPage": {
+        "type": "String"
+    },
+    "questionsProgrammeEtudes": {
+        "type": "jsonObject",
+        "properties": {
+
+            "type": {
+                "type": "String"
+            },
+            "id": {
+                "type": "String"
+            },
+            "titre": {
+                "type": "String"
+            },
+            "soustitre": {
+                "type": "String"
+            },
+            "questions": {
+                "type": ["jsonObject"],
+                "properties": {
+        
+                    "id": {
+                        "type": "String"
+                    },
+                    "enonce": {
+                        "type": "String"
+                    }
+            }
+            }
+    }
+    }
+}

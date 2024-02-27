@@ -206,4 +206,106 @@
     "type" : "E",
     "ressource": "Demander à mon API de consulter le guide 'Surmonter la procrastination scolaire'"
     },
+
+
+
+    {
+    "id": "039",	
+    "type" : "A",
+    "ressource": "Consulter mes enseignants;"
+    },
+    {
+    "id": "040",	
+    "type" : "A",
+    "ressource": "Consulter mon aide pédagogique."
+    },
+    {
+    "id": "041",	
+    "type" : "A",
+    "ressource": "Assister à des rencontres avec les centres d'aide (ex.: français,...)"
+    },
+
+
+    {
+    "id": "042",	
+    "type" : "R",
+    "ressource": "Rencontrer mon aide pédagogique ou un conseiller d'orientation;"
+    },
+    {
+    "id": "043",	
+    "type" : "R",
+    "ressource": "Consulter le responsable de mon programme en cas de conflit ou de difficultés;"
+    },
+    {
+    "id": "044",	
+    "type" : "R",
+    "ressource": "L'AGE si j'ai un conflit avec un professeur;"
+    },
+    {
+    "id": "045",	
+    "type" : "R",
+    "ressource": "Participer à des activités extra-scolaires pour parfaire mes relations avec mes professeurs."
+    },
+
+
+
+    {
+    "id": "046",	
+    "type" : "F",
+    "ressource": "Participer à des activités sportives, culturelles, etc;"
+    },
+    {
+    "id": "047",	
+    "type" : "F",
+    "ressource": "Consulter Marie-Josée Henry ou Suzanne Marquis au Centre de santé (G-206); des personnes-ressources sont là pour moi."
+    },
+
+
+    {
+    "id": "048",	
+    "type" : "C",
+    "ressource": "Faire le point sur ma situation avec mon aide pédagogique;"
+    },
+    {
+    "id": "049",	
+    "type" : "C",
+    "ressource": "Consulter Marie-Josée Henry ou Suzanne Marquis au Centre de santé (G-206); des personnes-ressources sont là pour moi."
+    },
+
+
+    {
+    "id": "050",	
+    "type" : "Y",
+    "ressource": "Consulter Marie-Josée Henry ou Suzanne Marquis au Centre de santé (G-206); infirmière, nutritionniste (pour un bilan de santé et des conseils);"
+    },
+    {
+    "id": "051",	
+    "type" : "Y",
+    "ressource": "Rencontrer mon aide pédagogique: conciliation horaire de cours et de vie;"
+    },
+    {
+    "id": "052",	
+    "type" : "Y",
+    "ressource": "Consulter le centre sportif: information et inscription à des activités parascolaires (Stéphane Lebrun, D-019);"
+    },
+
+
+
+    {
+    "id": "053",	
+    "type" : "¥",
+    "ressource": "Consulter Marie-Josée Henry ou Suzanne Marquis au Centre de santé (G-206); des personnes-ressources et de la documentation. Il n'y a pas de honte à penser à son équilibre!"
+    },
+
+
+    {
+    "id": "054",	
+    "type" : "$",
+    "ressource": "Consulter Sylvie Roussignol au Service d'aide financière (Prêts & bourses) au local B-147;"
+    },
+    {
+    "id": "055",	
+    "type" : "$",
+    "ressource": "Faire appel à Sylvie Roussignol (B-147) pour avoir recours à du dépannage alimentaire, etc."
+    }
 ]

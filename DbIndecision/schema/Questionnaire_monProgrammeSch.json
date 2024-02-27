@@ -18,7 +18,7 @@
         "type": "String"
     },
     "questionsProgrammeEtudes": {
-        "type": "jsonObject",
+        "type": ["jsonObject"],
         "properties": {
 
             "type": {
