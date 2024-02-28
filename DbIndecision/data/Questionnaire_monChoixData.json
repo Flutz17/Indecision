@@ -1,0 +1,45 @@
+{
+    "id": "055",	
+    "type" : "$",
+    "ressource": "Faire appel à Sylvie Roussignol (B-147) pour avoir recours à du dépannage alimentaire, etc."
+}
+
+"titre": "Mon choix de programme est-il un choix significatif",
+
+
+
+    {
+        "titre": {
+            "type": "String"
+        },
+        "directive": {
+            "type": "jsonObject",
+            "properties": {
+    
+                "titre": {
+                    "type": "String"
+                },
+                "objectif": {
+                    "type": ["String"]
+                },
+                "but": {
+                    "type": "String"
+                }
+        }
+        },
+        "piedPage": {
+            "type": "String"
+        },
+        "questions": {
+            "type": ["jsonObject"],
+            "properties": {
+    
+                "facteur": {
+                    "type": "String"
+                },
+                "questions": {
+                    "type": "String"
+                }
+        }
+        }
+    }
