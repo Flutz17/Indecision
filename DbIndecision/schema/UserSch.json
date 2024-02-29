@@ -2,10 +2,7 @@
     "id": {
       "type": "String"
     },
-    "type": {
-      "type": "String"
-    },
-    "email":{
+    "numero":{
       "type": "String"
     },
     "password": {
