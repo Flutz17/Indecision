@@ -28,7 +28,7 @@
                 "type": "String"
             },
             "questions": {
-                "type": "String"
+                "type": ["String"]
             }
     }
     }

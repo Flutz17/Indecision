@@ -1,0 +1,128 @@
+[
+  {
+  "id": "001",
+  "type": "etudiant",
+  "email":"divad17.com@gmail.com",
+  "password": "123456789",
+  "nom": "Chalons",
+  "prenom":"David",
+  "Questionnaires": {
+    "monProgrammeEtudes":[{
+      "id": "001",
+      "type": "T",
+      "reponse": "j'arrive a m'habituer rapidement"
+    },
+    {
+      "id": "002",
+      "type": "S",
+      "reponse": "tout le monde crois en moi"
+    },
+    {
+      "id": "003",
+      "type": "I",
+      "reponse": "tout est bon pour moi"
+    },
+    {
+      "id": "004",
+      "type": "M",
+      "reponse": "tout est bon pour moi"
+    },
+    {
+      "id": "005",
+      "type": "O",
+      "reponse": "j'ai peur de tout rater"
+    },
+    {
+      "id": "006",
+      "type": "C",
+      "reponse": "je sais ce que je veux"
+    },
+    {
+      "id": "007",
+      "type": "A",
+      "reponse": "je sais ce que je veux"
+    },
+    {
+      "id": "008",
+      "type": "E",
+      "reponse": "je veux créé des jeux videos"
+    },
+    {
+      "id": "009",
+      "type": "X",
+      "reponse": "je vais bien enfin je crois"
+    }
+    ],
+    "monChoixProgramme":{
+      "type":
+    }
+  }
+  }
+]
+
+{
+    "id": {
+      "type": "String"
+    },
+    "type": {
+      "type": "String"
+    },
+    "password": {
+      "type": "String"
+    },
+    "nom": {
+      "type": "String"
+    },
+    "prenom": {
+      "type": "String"
+    },
+    "Questionnaires": {
+      "type": "JsonObject",
+      "properties": {
+    
+        "monProgrammeEtudes": {
+        "type": ["JsonObject"],
+        "properties": {
+            "id": {
+            "type": "String"
+            },
+            "type": {
+            "type": "String"
+            },
+            "reponse": {
+            "type": "String"
+            }
+        }
+        },
+        "monChoixProgramme": {
+        "type": "JsonObject",
+        "properties": {
+            "type": {
+            "type": "String"
+            },
+            "reponsesPositives": {
+            "type": ["String"]
+            },
+            "reponsesNegatives": {
+            "type": ["String"]
+            }
+        }
+        },
+        "moyensPourReussir": {
+        "type": "JsonObject",
+        "properties": {
+            "type": {
+            "type": "String"
+            },
+            "actionReponses": {
+            "type": ["String"]
+            },
+            "ressourcesReponses": {
+            "type": ["String"]
+            }
+        }
+        }
+    }
+    }
+}
+  

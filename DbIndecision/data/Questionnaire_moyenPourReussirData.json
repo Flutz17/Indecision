@@ -1,0 +1,120 @@
+[
+    {
+    "titre": "DES MOYENS CONCRETS POUR MIEUX REUSSIR",
+    "sousTitre": "Pour chaque facteur qui explique votre situation actuelle, surlignez:",
+    "instruction": "1e les actions personnelles que vous pourriez adopter cette session;  2e les ressources du collège qui pourraient soutenir votre démarche vers la réussite.",
+    "piedPage": "VOICI LA LISTE DES CONSEILLERS(ERES) DU SERVICE DE CONSULTATION:",
+    "sousPiedPage": [{
+        "nom": "Pierre Boucher",
+        "titre": ["Aide pédagogiques individuelle"]
+    },
+    {
+        "nom": "Maud Cloutier",
+        "titre": ["Conseillère d'orientation","Aide pédagogiques individuelle"]
+    },
+    {
+        "nom": "Danielle Raymond",
+        "titre": ["Conseillère en information scolaire et professionnelle","Aide pédagogiques individuelle"]
+    },
+    {
+        "nom": "Caroline Simard",
+        "titre": ["Conseillère d'orientation","Aide pédagogiques individuelle"]
+    },
+    {
+        "nom": "Caroline Simard",
+        "titre": ["Conseillère en formation scolaire","Aide pédagogiques individuelle"]
+    }
+    ],
+    "questionsMoyensReussite": [{
+        "facteur": "G",
+        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "actions":["001","002","003","004"],
+        "ressources":["001","002","003","004","005"]
+    },
+    {
+        "facteur": "M",
+        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "actions":["005","006","007","008","009","010"],
+        "ressources":["006","007","008","009","010"]
+    },
+    {
+        "facteur": "S",
+        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "actions":["011","012"],
+        "ressources":["011","012","013","014","015","016"]
+    },
+    {
+        "facteur": "I",
+        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "actions":["013","014","015","016"],
+        "ressources":["017","018","019","020","021"]
+    },
+    {
+        "facteur": "O",
+        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "actions":["017","018","019"],
+        "ressources":["022","023","024","025","026","027"]
+    },
+    {
+        "facteur": "T",
+        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "actions":["020","021","022","023"],
+        "ressources":["028","029","030","031","032","033","034"]
+    },
+    {
+        "facteur": "P",
+        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "actions":["024"],
+        "ressources":["035","036"]
+    },
+    {
+        "facteur": "E",
+        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "actions":["025","026"],
+        "ressources":["037","038"]
+    },
+    {
+        "facteur": "A",
+        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "actions":["027","028","029","030","031"],
+        "ressources":["039","040","041"]
+    },
+    {
+        "facteur": "R",
+        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "actions":["032","033","034","035"],
+        "ressources":["042","043","044","045"]
+    },
+    {
+        "facteur": "F",
+        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "actions":["036","037","038"],
+        "ressources":["046","047"]
+    },
+    {
+        "facteur": "C",
+        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "actions":["039","040","041","042"],
+        "ressources":["048","049"]
+    },
+    {
+        "facteur": "Y",
+        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "actions":["043","044","045","046"],
+        "ressources":["050","051","052"]
+    },
+    {
+        "facteur": "¥",
+        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "actions":["047"],
+        "ressources":["053"]
+    },
+    {
+        "facteur": "$",
+        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "actions":["048","049","050"],
+        "ressources":["054","055"]
+    }
+    ]
+    }
+]

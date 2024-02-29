@@ -11,6 +11,17 @@
     "piedPage": {
         "type": "String"
     },
+    "sousPiedPage": {
+        "type": ["jsonObject"],
+        "properties": {
+            "Nom": {
+                "type": "String"
+            },
+            "titre": {
+                "type": ["String"]
+            }
+        }
+    },
     "questionsMoyensReussite": {
         "type": ["jsonObject"],
         "properties": {
@@ -22,10 +33,10 @@
                 "type": "String"
             },
             "actions": {
-                "type": "String"
+                "type": ["String"]
             },
             "ressources": {
-                "type": "String"
+                "type": ["String"]
             }
     }
     }

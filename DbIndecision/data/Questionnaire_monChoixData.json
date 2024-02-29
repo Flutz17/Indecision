@@ -1,45 +1,48 @@
-{
-    "id": "055",	
-    "type" : "$",
-    "ressource": "Faire appel à Sylvie Roussignol (B-147) pour avoir recours à du dépannage alimentaire, etc."
-}
-
-"titre": "Mon choix de programme est-il un choix significatif",
-
-
-
+[
     {
-        "titre": {
-            "type": "String"
-        },
-        "directive": {
-            "type": "jsonObject",
-            "properties": {
-    
-                "titre": {
-                    "type": "String"
-                },
-                "objectif": {
-                    "type": ["String"]
-                },
-                "but": {
-                    "type": "String"
-                }
-        }
-        },
-        "piedPage": {
-            "type": "String"
-        },
-        "questions": {
-            "type": ["jsonObject"],
-            "properties": {
-    
-                "facteur": {
-                    "type": "String"
-                },
-                "questions": {
-                    "type": "String"
-                }
-        }
-        }
+    "titre": "Mon choix de programme est-il un choix significatif",
+    "directive":{
+        "titre": "DIRECTIVES",
+        "objectif": ["Ce questionnaire a pour objectif de prendre le temps de t'arrêter et de réfléchir sur le choix de programme que tu as fait. Il va t'aider à confirmer que ton choix est un bon choix pour toi, ou à l'inverse, il va t'aider à identifier l'indécision que tu peux ressentir face à celui-ci.","Les énoncés de ce questionnaire référent à tes perceptions, à tes réflexions, à tes attitudes ou à tes réactions émotives en relation avec ton choix de programme et tes activités sociales.","Il n'y a pas de bonnes ou de mauvaises réponses.","Une réponse est vraie si elle correspond exactement à ton vécu."],
+        "but" : "Ce questionnaire a été réalisé par le Service de consultation du Cégep de Rivière-du-Loup afin de dépister les élèves au choix de carrière indécis et de les supporter dans leur parcours au collégial."
+    },
+    "piedPage": "Les énoncés sont regroupés par FACTEUR. Pour chacun des facteurs, calcule le nombre de réponses « VRAI » et reporte tes résultats sur la fiche de compilation.",
+    "questions": [{
+        "facteur": "I",
+        "questions": ["001","002","003","004","005"]
+    },
+    {
+        "facteur": "S",
+        "questions": ["006","007","008","009","010"]
+    },
+    {
+        "facteur": "M",
+        "questions": ["011","012","013","014","015"]
+    },
+    {
+        "facteur": "O",
+        "questions": ["016","017","018","019","020"]
+    },
+    {
+        "facteur": "C",
+        "questions": ["021","022","023","024","025"]
+    },
+    {
+        "facteur": "T",
+        "questions": ["026","027","028","029","030"]
+    },
+    {
+        "facteur": "D",
+        "questions": ["031","032","033","034","035"]
+    },
+    {
+        "facteur": "E",
+        "questions": ["036","037","038","039","040"]
+    },
+    {
+        "facteur": "X",
+        "questions": ["041","042","043","044","045","046"]
     }
+    ]
+    }
+]
