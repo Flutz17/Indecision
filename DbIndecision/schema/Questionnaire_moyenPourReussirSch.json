@@ -14,7 +14,7 @@
     "sousPiedPage": {
         "type": ["jsonObject"],
         "properties": {
-            "Nom": {
+            "nom": {
                 "type": "String"
             },
             "titre": {

@@ -5,6 +5,9 @@
     "type": {
       "type": "String"
     },
+    "email":{
+      "type": "String"
+    },
     "password": {
       "type": "String"
     },
@@ -35,9 +38,6 @@
         "monChoixProgramme": {
         "type": "JsonObject",
         "properties": {
-            "type": {
-            "type": "String"
-            },
             "reponsesPositives": {
             "type": ["String"]
             },
@@ -49,9 +49,6 @@
         "moyensPourReussir": {
         "type": "JsonObject",
         "properties": {
-            "type": {
-            "type": "String"
-            },
             "actionReponses": {
             "type": ["String"]
             },
