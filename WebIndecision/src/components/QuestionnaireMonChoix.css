@@ -1,0 +1,47 @@
+/* QuestionnaireMonChoix.css */
+
+.questionnaire-container {
+    width: 80%;
+    max-width: 800px; /* Ajustez cette largeur en fonction de la largeur souhaitée */
+    margin: 2rem auto; /* Centrer le conteneur sur la page avec une marge en haut et en bas */
+    padding: 1rem;
+    background-color: #fff; /* Fond blanc pour l'ensemble du composant */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Une légère ombre pour du relief */
+    border-radius: 4px; /* Coins arrondis */
+  }
+  
+  .questionnaire-header h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 1rem; /* Espacement après le titre */
+  }
+  
+  .questionnaire-main {
+    padding: 0 1rem; /* Padding sur les côtés */
+  }
+  
+  .questionnaire-title h3 {
+    color: black;
+    text-align: center;
+    margin-bottom: 1rem; /* Espacement après le sous-titre */
+  }
+  
+  /* Style pour encadrer la section DIRECTIVES */
+  .questionnaire-directives {
+    border: 1px solid #000; /* Création d'un cadre */
+    padding: 1rem;
+    margin-bottom: 1rem; /* Espacement après la section */
+    border-radius: 4px; /* Coins arrondis pour l'encadré */
+    background-color: #f9f9f9; /* Un fond légèrement différent pour distinguer la section */
+  }
+  
+  .questionnaire-directives h4 {
+    color: black;
+    margin-bottom: .5rem; /* Espacement après le titre des directives */
+  }
+  
+  .questionnaire-directives p {
+    color: black;
+    text-align: left; /* Alignement du texte à gauche */
+    line-height: 1.5; /* Espacement des lignes pour une meilleure lisibilité */
+  }
