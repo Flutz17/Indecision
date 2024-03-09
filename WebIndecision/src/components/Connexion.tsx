@@ -1,5 +1,3 @@
-// components/Connexion.tsx
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -10,14 +8,13 @@ const Connexion = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Vous pouvez ajouter ici une logique de vérification du numéro et du mot de passe
-    // Pour l'instant, nous nous connectons simplement
+
     setLoggedIn(true);
     navigate('/QuestionnaireMonChoix');
   };
 
   if (isLoggedIn) {
-    return null; // Retourne null si l'utilisateur est déjà connecté (peut être modifié selon vos besoins)
+    return null;
   }
 
   return (

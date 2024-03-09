@@ -1,54 +1,52 @@
-/* QuestionnaireMonChoix.css */
-
 .questionnaire-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 80vh; /* Utilisez la hauteur de viewport pour centrer verticalement */
+  min-height: 80vh;
 }
 
   
   .questionnaire-header h1 {
     text-align: center;
     color: black;
-    margin-bottom: 1rem; /* Espacement après le titre */
+    margin-bottom: 1rem;
   }
   
   .questionnaire-main {
-    padding: 0 1rem; /* Padding sur les côtés */
+    padding: 0 1rem;
   }
   
   .questionnaire-title h3 {
     color: black;
     text-align: center;
-    margin-bottom: 1rem; /* Espacement après le sous-titre */
+    margin-bottom: 1rem;
   }
   
-  /* Style pour encadrer la section DIRECTIVES */
+  
   .questionnaire-directives {
-    border: 1px solid #000; /* Création d'un cadre */
+    border: 1px solid #000;
     padding: 1rem;
-    margin-bottom: 1rem; /* Espacement après la section */
-    border-radius: 4px; /* Coins arrondis pour l'encadré */
-    background-color: #f9f9f9; /* Un fond légèrement différent pour distinguer la section */
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    background-color: #f9f9f9;
   }
   
   .questionnaire-directives h4 {
     color: black;
-    margin-bottom: .5rem; /* Espacement après le titre des directives */
+    margin-bottom: .5rem;
   }
   
   .questionnaire-directives p {
     color: black;
-    text-align: left; /* Alignement du texte à gauche */
-    line-height: 1.5; /* Espacement des lignes pour une meilleure lisibilité */
+    text-align: left;
+    line-height: 1.5;
   }
 
   .questionnaire-item {
     display: flex;
-    align-items: center; /* Centre les éléments verticalement */
+    align-items: center;
     margin-bottom: 1rem;
   }
   
@@ -57,10 +55,10 @@
   }
   
   .response-options {
-    display: flex; /* Affiche les boutons radio en ligne */
+    display: flex;
     justify-content: flex-end;
   }
   
   .radio-option {
-    margin-left: 1rem; /* Espacement entre les boutons radio et la question */
+    margin-left: 1rem;
   }

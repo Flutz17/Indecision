@@ -1,14 +1,10 @@
-import React from 'react';
-import './QuestionnaireMonChoix.css'; // Assurez-vous que le chemin est correct
+import './QuestionnaireMonChoix.css';
 
 const QuestionnaireMonChoix = () => {
-  // Ajoutez ici toute logique supplémentaire nécessaire pour votre composant
 
   return (
     <div className="questionnaire-container">
       <header className="questionnaire-header">
-        {/* Si vous avez le logo, décommentez et ajoutez le chemin d'accès correct */}
-        {/* <img src={pathToYourLogo} alt="Logo" /> */}
         <h1>QUESTIONNAIRE</h1>
       </header>
       <main className="questionnaire-main">
@@ -51,10 +47,10 @@ const QuestionnaireMonChoix = () => {
           <span className="question-text">2. Depuis que j'ai commencé mon programme d'études, mes intérêts à la carrière ont changé.</span>
           <div className="response-options">
             <label className="radio-option">
-              <input type="radio" name="q1" value="true" />
+              <input type="radio" name="q2" value="true" />
             </label>
             <label className="radio-option">
-              <input type="radio" name="q1" value="false" />
+              <input type="radio" name="q2" value="false" />
             </label>
           </div>
         </div>
@@ -62,10 +58,10 @@ const QuestionnaireMonChoix = () => {
           <span className="question-text">3. Mon choix de programme ne repose pas sur des expériences de travail ou des expériences personnelles que j'ai vécues.</span>
           <div className="response-options">
             <label className="radio-option">
-              <input type="radio" name="q1" value="true" />
+              <input type="radio" name="q3" value="true" />
             </label>
             <label className="radio-option">
-              <input type="radio" name="q1" value="false" />
+              <input type="radio" name="q3" value="false" />
             </label>
           </div>
         </div>
@@ -73,10 +69,10 @@ const QuestionnaireMonChoix = () => {
           <span className="question-text">4. Je ne me connais pas suffisamment pour être certain que j'ai fait le bon choix de programme.</span>
           <div className="response-options">
             <label className="radio-option">
-              <input type="radio" name="q1" value="true" />
+              <input type="radio" name="q4" value="true" />
             </label>
             <label className="radio-option">
-              <input type="radio" name="q1" value="false" />
+              <input type="radio" name="q4" value="false" />
             </label>
           </div>
         </div>
@@ -84,14 +80,13 @@ const QuestionnaireMonChoix = () => {
           <span className="question-text">5. Le programme que j'ai choisi ne correspond pas à mes principales exigences face à un emploi.</span>
           <div className="response-options">
             <label className="radio-option">
-              <input type="radio" name="q1" value="true" />
+              <input type="radio" name="q5" value="true" />
             </label>
             <label className="radio-option">
-              <input type="radio" name="q1" value="false" />
+              <input type="radio" name="q5" value="false" />
             </label>
           </div>
         </div>
-          {/* Répétez ce bloc pour les autres questions, en changeant les 'id' et 'name' appropriés */}
         </form>
       </main>
     </div>
