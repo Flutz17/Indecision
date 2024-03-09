@@ -1,27 +1,22 @@
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Connexion from './components/Connexion';
 import QuestionnaireMonChoix from './components/QuestionnaireMonChoix';
-import './App.css';
 import CegepLogo from './photo/CegepLogo.png';
+import './App.css';
 
 const App = () => {
   return (
     <Router>
+      <div className="header">
+        <img src={CegepLogo} alt="CÉGEP RIVIÈRE-DU-LOUP" className="logo" />
+        <Link to="/connexion" className="connexion-link">Connexion</Link>
+      </div>
       <div className="container">
-        <nav>
-          <ul>
-            <header className="app-header">
-            <img src={CegepLogo} alt="CÉGEP RIVIÈRE-DU-LOUP" className="logo"/>
-            <li>
-              <Link to="/connexion">Connexion</Link>
-            </li>
-            </header>
-          </ul>
-        </nav>
-        <hr />
         <Routes>
-          <Route path="/connexion" element={<Connexion />} />
-          <Route path="/QuestionnaireMonChoix" element={<QuestionnaireMonChoix />} />
+          <div className="page-container">
+            <Route path="/connexion" element={<Connexion />} />
+            <Route path="/QuestionnaireMonChoix" element={<QuestionnaireMonChoix />} />
+          </div>
         </Routes>
       </div>
     </Router>

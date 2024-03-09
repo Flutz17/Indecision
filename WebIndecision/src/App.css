@@ -1,30 +1,76 @@
-/* Assurez-vous que votre conteneur utilise Flexbox pour aligner les éléments */
-.app-header {
+.page-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 0.5rem 1rem; /* Ajustez le padding selon vos besoins */
+  text-align: center;
+  min-height: 80vh; /* Centrer verticalement avec la hauteur de viewport */
 }
 
-.logo {
-  height: 50px; /* Ajustez la hauteur selon vos besoins */
-  width: auto; /* Garde le ratio de l'image */
-}
-
-/* Style pour la navigation si nécessaire */
-nav ul {
-  list-style-type: none;
-  padding: 0;
+body, html {
   margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff; /* Assure que le fond de toute la page est blanc */
+  color: #000; /* Assure que le texte est noir par défaut */
+  padding-top: 60px; /* Ajoute de l'espace en haut pour le contenu principal, afin qu'il ne soit pas caché par l'en-tête */
+}
+
+/* En-tête fixe */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1; /* Couleur de fond de l'en-tête */
   display: flex;
+  justify-content: space-between; /* Sépare le logo et le lien de connexion */
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ombre légère pour un effet de profondeur */
+  z-index: 1000; /* Assure que l'en-tête reste au-dessus du contenu lors du défilement */
+}
+
+/* Logo dans l'en-tête */
+.logo {
+  height: 50px; /* Ajustez cette valeur en fonction de la taille de votre logo */
+}
+
+/* Lien de connexion dans l'en-tête */
+.connexion-link {
+  text-decoration: none;
+  color: white; /* Couleur du texte du lien */
+  background-color: #007bff; /* Couleur de fond du bouton */
+  padding: 5px 15px;
+  border-radius: 5px; /* Bordures arrondies pour le bouton */
+}
+
+/* Container pour le contenu principal */
+.container {
+  width: 80%;
+  max-width: 1200px; /* Largeur maximale du contenu */
+  margin: 20px auto; /* Centre le container avec une marge automatique */
+  text-align: center; /* Centre le texte dans le container */
+}
+
+/* Style pour la navigation (si vous en avez besoin en dehors de l'en-tête) */
+nav {
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none; /* Enlève les puces de la liste */
+  padding: 0;
 }
 
 nav li {
-  margin-left: 20px;
+  display: inline; /* Affiche les éléments de liste en ligne */
+  margin-right: 20px;
 }
 
 nav a {
   text-decoration: none;
-  color: #000; /* Ou toute autre couleur */
+  color: #333; /* Couleur des liens */
 }
 
+/* Ajoutez d'autres styles spécifiques à vos composants ici */

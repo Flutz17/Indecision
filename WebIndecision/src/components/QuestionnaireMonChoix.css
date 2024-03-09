@@ -1,14 +1,14 @@
 /* QuestionnaireMonChoix.css */
 
 .questionnaire-container {
-    width: 80%;
-    max-width: 800px; /* Ajustez cette largeur en fonction de la largeur souhaitée */
-    margin: 2rem auto; /* Centrer le conteneur sur la page avec une marge en haut et en bas */
-    padding: 1rem;
-    background-color: #fff; /* Fond blanc pour l'ensemble du composant */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Une légère ombre pour du relief */
-    border-radius: 4px; /* Coins arrondis */
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh; /* Utilisez la hauteur de viewport pour centrer verticalement */
+}
+
   
   .questionnaire-header h1 {
     text-align: center;
@@ -44,4 +44,23 @@
     color: black;
     text-align: left; /* Alignement du texte à gauche */
     line-height: 1.5; /* Espacement des lignes pour une meilleure lisibilité */
+  }
+
+  .questionnaire-item {
+    display: flex;
+    align-items: center; /* Centre les éléments verticalement */
+    margin-bottom: 1rem;
+  }
+  
+  .question-text {
+    flex-grow: 1;
+  }
+  
+  .response-options {
+    display: flex; /* Affiche les boutons radio en ligne */
+    justify-content: flex-end;
+  }
+  
+  .radio-option {
+    margin-left: 1rem; /* Espacement entre les boutons radio et la question */
   }
