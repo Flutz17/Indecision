@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Connexion from './components/Connexion';
 import QuestionnaireMonChoix from './components/QuestionnaireMonChoix';
+import CreationCompte from './components/CreationCompte';
 import CegepLogo from './photo/CegepLogo.png';
 import './App.css';
 
@@ -16,6 +17,7 @@ const App = () => {
           <div className="page-container">
             <Route path="/connexion" element={<Connexion />} />
             <Route path="/QuestionnaireMonChoix" element={<QuestionnaireMonChoix />} />
+            <Route path="/CreationCompte" element={<CreationCompte />} />
           </div>
         </Routes>
       </div>
