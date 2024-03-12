@@ -1,0 +1,23 @@
+.questionnaire-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .objectifs-rencontre h2, .section-facteurs h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .objectifs-rencontre ul, .section-facteurs div {
+    text-align: left;
+    margin-left: 40px;
+  }
+  
+  /* Ajoutez des styles supplémentaires pour correspondre à l'image téléchargée */
+  

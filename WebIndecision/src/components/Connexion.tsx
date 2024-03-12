@@ -7,12 +7,12 @@ const Connexion = () => {
   const [motDePasse, setMotDePasse] = useState('');
   const navigate = useNavigate();
 
-  const handleLogin1 = () => {
+  const handleLogin = () => {
 
     setLoggedIn(true);
     navigate('/QuestionnaireMonChoix');
   };
-  const handleLogin2 = () => {
+  const handleCreation = () => {
 
     setLoggedIn(true);
     navigate('/CreationCompte');
@@ -34,8 +34,8 @@ const Connexion = () => {
           <label htmlFor="password">Mot de Passe:</label>
           <input type="password" id="password" value={motDePasse} onChange={(e) => setMotDePasse(e.target.value)} />
         </div>
-        <button type="button" onClick={handleLogin1}>Se Connecter</button>
-        <button type="button" onClick={handleLogin2}>Créer un compte</button>
+        <button type="button" onClick={handleLogin}>Se Connecter</button>
+        <button type="button" onClick={handleCreation}>Créer un compte</button>
       </form>
     </div>
   );
