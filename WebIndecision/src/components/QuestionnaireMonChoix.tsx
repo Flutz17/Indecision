@@ -23,8 +23,8 @@ const QuestionnaireMonChoix = () => {
         <h1>QUESTIONNAIRE</h1>
       </header>
       <main className="questionnaire-main">
-        <div className="questionnaire-title">
-          <h3>Mon choix de programme est-il un choix significatif pour moi?</h3>
+        <div className="questionnaire-page">
+          <h1>Mon choix de programme est-il un choix significatif pour moi?</h1>
         </div>
         <section className="questionnaire-directives">
           <h4>DIRECTIVES</h4>
@@ -452,7 +452,7 @@ const QuestionnaireMonChoix = () => {
 
         <form className="questionnaire-form">
           <br></br>
-          <h3>Facteur D</h3>
+          <h3>Facteur A</h3>
           <div className="response-options">
             <label className="radio-option">
               Vrai

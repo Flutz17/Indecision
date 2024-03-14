@@ -164,27 +164,27 @@
 
     {
     "id": "031",	
-    "type" : "D",
+    "type" : "A",
     "question": "De façon générale dans ma vie, j'ai de la difficulté à prendre une décision."
     },
     {
     "id": "032",	
-    "type" : "D",
+    "type" : "A",
     "question": "J'ai besoin d'être rassuré(e) par un conseiller d'orientation que mon choix de programme est le bon pour moi."
     },
     {
     "id": "033",	
-    "type" : "D",
+    "type" : "A",
     "question": "En général, j'éprouve de la difficulté à savoir ce qui me convient."
     },
     {
     "id": "034",	
-    "type" : "D",
+    "type" : "A",
     "question": "La plupart du temps, je garde pour moi ce que je ressens."
     },
     {
     "id": "035",	
-    "type" : "D",
+    "type" : "A",
     "question": "Depuis que j'ai commencé mon programme d'études, j'ai moins confiance en moi et en mes capacités."
     },
 

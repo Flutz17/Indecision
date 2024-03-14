@@ -40,6 +40,19 @@ const QuestionnaireMoyenPourReussir = () => {
         <div className="ressources-college">
           <h3>Ressources du Collège</h3>
           {/* Liste ressources  */}
+          <ul>
+            <input type="checkbox" id="a1" name="actions" />
+            <label htmlFor="a1">Établir mes priorités: étude, travail, loisir;</label>
+            <br></br>
+            <input type="checkbox" id="a2" name="actions" />
+            <label htmlFor="a2">Diminuer le temps consacré à un travail rémunéré;</label>
+            <br></br>
+            <input type="checkbox" id="a3" name="actions" />
+            <label htmlFor="a3">Me faire un horaire précis d'étude et le respecter;</label>
+            <br></br>
+            <input type="checkbox" id="a4" name="actions" />
+            <label htmlFor="a4">Utiliser des outils de planification: agenda, grille horaire, tableau de session, etc.</label>
+        </ul>
         </div>
       </div>
     </div>

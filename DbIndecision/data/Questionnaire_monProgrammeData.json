@@ -36,7 +36,11 @@
         },
         {
             "id": "005",
-            "enonce": "Croient-ils en moi et en mon projet?"
+            "enonce": "Mon réseau:"
+        },
+        {
+            "id": "006",
+            "enonce": "Ce qu'ils disent de mon projet:"
         }
         ]
     },
@@ -46,23 +50,23 @@
         "titre": "Identité professionnelle",
         "soustitre": "Mon choix de programme est-il directement en lien avec mes intérêts, mes valeurs et aptitudes?",
         "questions":[{
-            "id": "006",
+            "id": "007",
             "enonce": "Est-ce que je ressens que mon programme fait du sens pour moi? Est-il possible pour moi d'envisager de travailler dans ce domaine et d'en retirer une satisfaction personnelle? Ai-je le profil du diplômé?"
         },
         {
-            "id": "007",
+            "id": "008",
             "enonce": "J'aime:"
         },
         {
-            "id": "008",
+            "id": "009",
             "enonce": "Je suis capable de:"
         },
         {
-            "id": "009",
+            "id": "010",
             "enonce": "Ce qui est important pour moi, c'est:"
         },
         {
-            "id": "010",
+            "id": "011",
             "enonce": "je suis motivé par:"
         }
         ]
@@ -73,11 +77,11 @@
         "titre": "Métier",
         "soustitre": "Connaissance de la profession et du marché du travail",
         "questions":[{
-            "id": "011",
+            "id": "012",
             "enonce": "Depuis le debut de la session, mes enseignants m'ont présenté le contenu des cours du programme, j'ai visité des services de garde, j'ai fait des observations au centre de la petite enfance 'Le Jardin'. De plus, j'ai entendu des témoignages (parents et enfants) et effectué des travaux pratiques dans le cours d'introduction à la profession."
         },
         {
-            "id": "012",
+            "id": "013",
             "enonce": "Ce que je pense du métier est positif ou négatif? Pourquoi?"
         }
         ]
@@ -88,7 +92,7 @@
         "titre": "Cheminement et cours",
         "soustitre": "Efficaté personnelle dans le métier d'étudiant",
         "questions":[{
-            "id": "013",
+            "id": "014",
             "enonce": "Quel est mon degré d'aisance face à la charge de travail et aux exigences demandées? Est-ce que je me sens capable de réussir? Suis-je prêt à m'investir et à fournir les efforts nécessaires pour réussir mes cours? Est-ce que j'utilise les bonnes méthodes de travail pour moi? Ai-je recours aux enseignants lorsque je ne comprend pas? Ai-je besoin de m'adapter à l'approche pédagogique utilisée dans certains cours?"
         }
         ]
@@ -99,7 +103,7 @@
         "titre": "Choix de carrière",
         "soustitre": "Clarté et maintien du choix de carrière",
         "questions":[{
-            "id": "014",
+            "id": "015",
             "enonce": "Suis-je en mesure de me projeter sur le marché du travail dans ce domaine? Est-ce que je vois la pertinence des cours pour mon projet de carrière? Ce qui me plaît dans cette profession :"
         }
         ]
@@ -107,10 +111,10 @@
     {
         "type": "A",
         "id": "007",
-        "titre": "Moi (P/R à ma personnalité)",
+        "titre": "Moi",
         "soustitre": "Perception de soi et des attitudes",
         "questions":[{
-            "id": "015",
+            "id": "016",
             "enonce": "Habituellement, est-ce que j'ai tendance à me faire confiance? Est-ce que j'ai de la facilité à m'affirmer? Est-ce que je me considère comme quelqu'un d'important? Le premier facteur qui influence la réussite est ma propre perception de moi-meme face à la réussite."
         }
         ]
@@ -121,11 +125,11 @@
         "titre": "Engagement et projets de vie",
         "soustitre": "Degré d'engagement dans les études et autres projets de vie",
         "questions":[{
-            "id": "016",
+            "id": "017",
             "enonce": "Quels sont mes projets?"
         },
         {
-            "id": "017",
+            "id": "018",
             "enonce": "Quelles sont mes priotités dans la vie?"
         }
         ]
@@ -136,11 +140,11 @@
         "titre": "Vie personnelle",
         "soustitre": "Etat de ma situation personnelle",
         "questions":[{
-            "id": "018",
+            "id": "019",
             "enonce": "Est-ce que je vis présentement des événements significatifs qui peuvent affecter mon cheminement scolaire et, par le fait même, remettre en question mon choix de programme? Est-ce que je sens que je perds le contrôle dans une de mes sphères de vie?"
         },
         {
-            "id": "019",
+            "id": "020",
             "enonce": "Commentaires personnels :"
         }
         ]

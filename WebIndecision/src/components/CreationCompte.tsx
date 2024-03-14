@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 const CreationCompte = () => {
   const navigate = useNavigate();
 
-  // Définissez l'état pour chaque champ du formulaire
   const [numero, setNumero] = useState('');
   const [motDePasse, setMotDePasse] = useState('');
   const [nom, setNom] = useState('');
