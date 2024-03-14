@@ -35,8 +35,8 @@ h2 {
   justify-content: space-between;
 }
 
-.actions-personnelles,
-.ressources-college {
+.actions,
+.ressources {
   flex: 1;
   margin: 10px;
   padding: 5px;
@@ -44,14 +44,18 @@ h2 {
   border: 1px solid #000;
 }
 
-.actions-personnelles ul,
-.ressources-college ul {
+.actions ul,
+.ressources ul {
 text-align: left;
 }
 
-.actions-personnelles h3,
-.ressources-college h3 {
+.actions h3,
+.ressources h3 {
   font-size: 16px;
-  text-decoration: underline;
   margin-bottom: 10px;
+}
+
+.actions a,
+.ressources a{
+  text-decoration: underline;
 }

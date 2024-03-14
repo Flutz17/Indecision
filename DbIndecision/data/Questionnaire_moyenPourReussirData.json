@@ -33,85 +33,85 @@
     },
     {
         "facteur": "M",
-        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "titre": "Organisation et méthode de travail: être méthodique et structuré dans ce que j'entreprends.",
         "actions":["005","006","007","008","009","010"],
         "ressources":["006","007","008","009","010"]
     },
     {
         "facteur": "S",
-        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "titre": "Stress/anxiété: maximiser mon bien-être en diminuant la pression!",
         "actions":["011","012"],
         "ressources":["011","012","013","014","015","016"]
     },
     {
         "facteur": "I",
-        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "titre": "Affirmation de soi/identité: me connaître, me faire confiance et prendre ma place.",
         "actions":["013","014","015","016"],
         "ressources":["017","018","019","020","021"]
     },
     {
         "facteur": "O",
-        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "titre": "Orientation: mieux définir son projet d'étude et de carrière",
         "actions":["017","018","019"],
         "ressources":["022","023","024","025","026","027"]
     },
     {
         "facteur": "T",
-        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "titre": "Adaptation aux études: m'adapter au rythme du collégial et en tirer le maximum.",
         "actions":["020","021","022","023"],
         "ressources":["028","029","030","031","032","033","034"]
     },
     {
         "facteur": "P",
-        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "titre": "Perception des études: l'importance des études dans ma vie?",
         "actions":["024"],
         "ressources":["035","036"]
     },
     {
         "facteur": "E",
-        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "titre": "Effort/Persévérance: savoir mettre l'énergie nécessaire pour réussir mes études.",
         "actions":["025","026"],
         "ressources":["037","038"]
     },
     {
         "facteur": "A",
-        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "titre": "Difficulté d'apprentissage: reconnaître mes limites et y faire face.",
         "actions":["027","028","029","030","031"],
         "ressources":["039","040","041"]
     },
     {
         "facteur": "R",
-        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "titre": "Relation avec les professeurs: reconnaître que les profs sont de précieux alliés pour ma réussite.",
         "actions":["032","033","034","035"],
         "ressources":["042","043","044","045"]
     },
     {
         "facteur": "F",
-        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "titre": "Réseau social et sentiment d'appartenance: m'établir un réseau stimulant et aidant.",
         "actions":["036","037","038"],
         "ressources":["046","047"]
     },
     {
         "facteur": "C",
-        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "titre": "Evénements circonstanciels: aller chercher du support dans les moments difficiles.",
         "actions":["039","040","041","042"],
         "ressources":["048","049"]
     },
     {
         "facteur": "Y",
-        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "titre": "Santé physique: prendre soin de moi et favoriser un équilibre personnel.",
         "actions":["043","044","045","046"],
         "ressources":["050","051","052"]
     },
     {
         "facteur": "¥",
-        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "titre": "Santé mentale: garder mon équilibre.",
         "actions":["047"],
         "ressources":["053"]
     },
     {
         "facteur": "$",
-        "titre": "Gestion du temps : savoir organiser mon temps de manière efficace.",
+        "titre": "Situation socio-économique: l'argent, j'apprends à m'en servir et à en demeurer le maître.",
         "actions":["048","049","050"],
         "ressources":["054","055"]
     }

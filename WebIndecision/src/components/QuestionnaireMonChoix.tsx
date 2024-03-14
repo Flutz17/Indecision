@@ -7,11 +7,30 @@ const QuestionnaireMonChoix = () => {
   const handleGoToQuestionnaireMonProgramme = () => {
     navigate('/QuestionnaireMonProgramme');
   };
+  const [countTrueI, setCountTrueI] = useState(0);
+  const [countTrueS, setCountTrueS] = useState(0);
   const [countTrue, setCountTrue] = useState(0);
 
   const handleOnChange = (e) => {
     const { value, checked } = e.target;
     setCountTrue((prevCount) =>
+      value === 'true' && checked
+        ? prevCount + 1
+        : prevCount - 1
+    );
+  };
+  const trueI = (e) => {
+    const { value, checked } = e.target;
+    setCountTrueI((prevCount) =>
+      value === 'true' && checked
+        ? prevCount + 1
+        : prevCount - 1
+    );
+  };
+
+  const trueS = (e) => {
+    const { value, checked } = e.target;
+    setCountTrueS((prevCount) =>
       value === 'true' && checked
         ? prevCount + 1
         : prevCount - 1
@@ -51,10 +70,10 @@ const QuestionnaireMonChoix = () => {
           <span className="question-text">1. J'ai des aptitudes variées qui me font encore hésiter dans le choix de mon programme.</span>
           <div className="response-options">
             <label className="radio-option">
-              <input type="radio" name="q1" value="true" onChange={handleOnChange}/>
+              <input type="radio" name="q1" value="true" onChange={trueI}/>
             </label>
             <label className="radio-option">
-              <input type="radio" name="q1" value="false" onChange={handleOnChange}/>
+              <input type="radio" name="q1" value="false" onChange={trueI}/>
             </label>
           </div>
         </div>
@@ -62,10 +81,10 @@ const QuestionnaireMonChoix = () => {
           <span className="question-text">2. Depuis que j'ai commencé mon programme d'études, mes intérêts à la carrière ont changé.</span>
           <div className="response-options">
             <label className="radio-option">
-              <input type="radio" name="q2" value="true" onChange={handleOnChange}/>
+              <input type="radio" name="q2" value="true" onChange={trueI}/>
             </label>
             <label className="radio-option">
-              <input type="radio" name="q2" value="false" onChange={handleOnChange}/>
+              <input type="radio" name="q2" value="false" onChange={trueI}/>
             </label>
           </div>
         </div>
@@ -73,10 +92,10 @@ const QuestionnaireMonChoix = () => {
           <span className="question-text">3. Mon choix de programme ne repose pas sur des expériences de travail ou des expériences personnelles que j'ai vécues.</span>
           <div className="response-options">
             <label className="radio-option">
-              <input type="radio" name="q3" value="true" onChange={handleOnChange}/>
+              <input type="radio" name="q3" value="true" onChange={trueI}/>
             </label>
             <label className="radio-option">
-              <input type="radio" name="q3" value="false" onChange={handleOnChange}/>
+              <input type="radio" name="q3" value="false" onChange={trueI}/>
             </label>
           </div>
         </div>
@@ -84,10 +103,10 @@ const QuestionnaireMonChoix = () => {
           <span className="question-text">4. Je ne me connais pas suffisamment pour être certain que j'ai fait le bon choix de programme.</span>
           <div className="response-options">
             <label className="radio-option">
-              <input type="radio" name="q4" value="true" onChange={handleOnChange}/>
+              <input type="radio" name="q4" value="true" onChange={trueI}/>
             </label>
             <label className="radio-option">
-              <input type="radio" name="q4" value="false" onChange={handleOnChange}/>
+              <input type="radio" name="q4" value="false" onChange={trueI}/>
             </label>
           </div>
         </div>
@@ -95,14 +114,17 @@ const QuestionnaireMonChoix = () => {
           <span className="question-text">5. Le programme que j'ai choisi ne correspond pas à mes principales exigences face à un emploi.</span>
           <div className="response-options">
             <label className="radio-option">
-              <input type="radio" name="q5" value="true" onChange={handleOnChange}/>
+              <input type="radio" name="q5" value="true" onChange={trueI}/>
             </label>
             <label className="radio-option">
-              <input type="radio" name="q5" value="false" onChange={handleOnChange}/>
+              <input type="radio" name="q5" value="false" onChange={trueI}/>
             </label>
           </div>
         </div>
         </form>
+        <div className="questionnaire-footer">
+          <p className="compteur-vrai">Total des réponses 'Vrai': {countTrueI}</p>
+        </div>
 
 
         <form className="questionnaire-form">
@@ -120,10 +142,10 @@ const QuestionnaireMonChoix = () => {
           <span className="question-text">6. Certaines personnes qui me sont chères sont d'avis que le choix de programme que j'ai fait ne me convient pas.</span>
           <div className="response-options">
             <label className="radio-option">
-              <input type="radio" name="q1" value="true" onChange={handleOnChange}/>
+              <input type="radio" name="q1" value="true" onChange={trueS}/>
             </label>
             <label className="radio-option">
-              <input type="radio" name="q1" value="false" onChange={handleOnChange}/>
+              <input type="radio" name="q1" value="false" onChange={trueS}/>
             </label>
           </div>
         </div>
@@ -131,10 +153,10 @@ const QuestionnaireMonChoix = () => {
           <span className="question-text">7. Je me sens mal à l'aise de rencontrer mes professeurs afin de leur parler de mon questionnement par rapport à mon choix de carrière.</span>
           <div className="response-options">
             <label className="radio-option">
-              <input type="radio" name="q2" value="true" onChange={handleOnChange}/>
+              <input type="radio" name="q2" value="true" onChange={trueS}/>
             </label>
             <label className="radio-option">
-              <input type="radio" name="q2" value="false" onChange={handleOnChange}/>
+              <input type="radio" name="q2" value="false" onChange={trueS}/>
             </label>
           </div>
         </div>
@@ -142,10 +164,10 @@ const QuestionnaireMonChoix = () => {
           <span className="question-text">8. Je ne peux pas compter sur le soutien de mes proches pour m'encourager à réussir mes études.</span>
           <div className="response-options">
             <label className="radio-option">
-              <input type="radio" name="q3" value="true" onChange={handleOnChange}/>
+              <input type="radio" name="q3" value="true" onChange={trueS}/>
             </label>
             <label className="radio-option">
-              <input type="radio" name="q3" value="false" onChange={handleOnChange}/>
+              <input type="radio" name="q3" value="false" onChange={trueS}/>
             </label>
           </div>
         </div>
@@ -153,10 +175,10 @@ const QuestionnaireMonChoix = () => {
           <span className="question-text">9. Les personnes qui me sont importantes ne portent pas intérêt à ce que je fais dans mes cours.</span>
           <div className="response-options">
             <label className="radio-option">
-              <input type="radio" name="q4" value="true" onChange={handleOnChange}/>
+              <input type="radio" name="q4" value="true" onChange={trueS}/>
             </label>
             <label className="radio-option">
-              <input type="radio" name="q4" value="false" onChange={handleOnChange}/>
+              <input type="radio" name="q4" value="false" onChange={trueS}/>
             </label>
           </div>
         </div>
@@ -164,14 +186,17 @@ const QuestionnaireMonChoix = () => {
           <span className="question-text">10. Je ne sens pas que mes amis m'encouragent à réussir mes études.</span>
           <div className="response-options">
             <label className="radio-option">
-              <input type="radio" name="q5" value="true" onChange={handleOnChange}/>
+              <input type="radio" name="q5" value="true" onChange={trueS}/>
             </label>
             <label className="radio-option">
-              <input type="radio" name="q5" value="false" onChange={handleOnChange}/>
+              <input type="radio" name="q5" value="false" onChange={trueS}/>
             </label>
           </div>
         </div>
         </form>
+        <div className="questionnaire-footer">
+          <p className="compteur-vrai">Total des réponses 'Vrai': {countTrueS}</p>
+        </div>
 
 
         <form className="questionnaire-form">
