@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Connexion from './components/Connexion';
 import QuestionnaireMonChoix from './components/QuestionnaireMonChoix';
 import QuestionnaireMonProgramme from './components/QuestionnaireMonProgramme';
+import QuestionnaireMoyenPourReussir from './components/QuestionnaireMoyenPourReussir';
 import CreationCompte from './components/CreationCompte';
 import Credit from './components/Credit';
 import CegepLogo from './photo/CegepLogo.png';
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/Connexion" element={<Connexion />} />
             <Route path="/QuestionnaireMonChoix" element={<QuestionnaireMonChoix />} />
             <Route path="/QuestionnaireMonProgramme" element={<QuestionnaireMonProgramme />} />
+            <Route path="/QuestionnaireMoyenPourReussir" element={<QuestionnaireMoyenPourReussir />} />
             <Route path="/CreationCompte" element={<CreationCompte />} />
             <Route path="/Credit" element={<Credit />} />
           </div>
