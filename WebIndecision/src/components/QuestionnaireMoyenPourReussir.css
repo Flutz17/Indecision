@@ -59,3 +59,23 @@ text-align: left;
 .ressources a{
   text-decoration: underline;
 }
+
+.basPage-titre,
+.basPage-container{
+  text-align: justify;
+}
+
+.basPage-container{
+  text-align: justify;
+  display: flex;
+  justify-content: space-between;
+}
+
+.basPage-container div {
+  flex-direction: column;
+  margin: 10px;
+}
+
+.basPage-container div p {
+  margin-bottom: 5px;
+}

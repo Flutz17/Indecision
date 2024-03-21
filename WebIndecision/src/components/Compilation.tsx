@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import TuVaReussir from '../photo/TuVaReussir.png';
 import './Compilation.css';
 
 interface LocationState {
@@ -45,7 +46,6 @@ const Compilation = () => {
     <div className="compilation-titre">
       <h2>Fiche de compilation des résultats</h2>
       <h2>Mon programme d'études est-il un choix significatif pour moi?</h2>
-      <p>1. Noircissez dans la colonne « Résultats » le nombre de réponses VRAI pour chacun des facteurs du questionnaire.</p>
       </div>
       <table>
         <thead>
@@ -65,14 +65,17 @@ const Compilation = () => {
           ))}
         </tbody>
       </table>
-      <p>2. Pour les six facteurs (I, S, M, O, C, T), identifiez le ou les facteurs pour lesquels vous avez obtenu un résultat de 2 ou plus en noircissant la ou les cases appropriées (à la gauche des facteurs).</p>
-      <p>3. Pour les facteurs (A, E, X), identifiez, s'il y a lieu, le ou les facteurs pour lesquels vous avez obtenu un résultat de 1 ou plus en noircissant la ou les cases appropriées (à la gauche des facteurs).</p>
+      <p>1. Pour les six facteurs (I, S, M, O, C, T), identifiez le ou les facteurs pour lesquels vous avez obtenu un résultat de 2 ou plus en noircissant la ou les cases appropriées (à la gauche des facteurs).</p>
+      <p>2. Pour les facteurs (A, E, X), identifiez, s'il y a lieu, le ou les facteurs pour lesquels vous avez obtenu un résultat de 1 ou plus en noircissant la ou les cases appropriées (à la gauche des facteurs).</p>
       <h2>J'accepte qu'une copie de la fiche de compilation soit incluse à mon dossier afin de recevoir l'aide appropriée.</h2>
-      <button onClick={handleGoToQuestionnaireMonChoix} className="next-button">
-        Retour au Questionnaire mon choix
-      </button>
+      <div className="imageTuVaReussir">
+          <img src={TuVaReussir} alt="TuVaReussir" className="TuVaReussir" />
+        </div>
         <button onClick={handleGoToQuestionnaireMonProgramme} className="next-button">
         Aller à Questionnaire mon Programme
+      </button>
+      <button onClick={handleGoToQuestionnaireMonChoix} className="next-button">
+        Retour au Questionnaire mon choix
       </button>
     </div>
   );

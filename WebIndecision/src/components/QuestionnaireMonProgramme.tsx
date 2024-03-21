@@ -1,5 +1,5 @@
-import './QuestionnaireMonProgramme.css';
 import { useNavigate } from 'react-router-dom';
+import './QuestionnaireMonProgramme.css';
 
 const QuestionnaireMonProgramme = () => {
   const navigate = useNavigate();
@@ -103,23 +103,6 @@ const QuestionnaireMonProgramme = () => {
         <br></br>
         <div className="questionnaire-programme-container"></div>
         <section className="titre-facteur">
-          <h2>Cheminement et cours (O)</h2>
-        </section>
-          <h2>Efficaté personnelle dans le métier d'étudiant</h2>
-          <p>Quel est mon degré d'aisance face à la charge de travail et aux exigences demandées? Est-ce que je me sens capable de réussir? Suis-je prêt à m'investir et à fournir les efforts nécessaires pour réussir mes cours? Est-ce que j'utilise les bonnes méthodes de travail pour moi? Ai-je recours aux enseignants lorsque je ne comprend pas? Ai-je besoin de m'adapter à l'approche pédagogique utilisée dans certains cours?</p>
-          {/* barre de satisfaction */}
-            <h6>Exemples:</h6>
-            <h6>A) Ma gestion du temps est-elle efficace?</h6>
-            <h6>B) Ma gestion du stress?</h6>
-            <h6>C) Ai-je tendance à procrastiner (à remettre des tâches au lendemain)</h6>
-            <h6>D) Ma prise de notes et mes lectures sont-elles efficaces?</h6>
-            <h6>E) J'étudie de 2 à 3 semaines avant un examen?</h6>
-            <h6>F) Suis-je bien organisé (agenda, cartable, planification de la session)?</h6>
-            <h6>G) Mon temps d'études est-il suffisant?</h6>
-
-        <br></br>
-        <div className="questionnaire-programme-container"></div>
-        <section className="titre-facteur">
           <h2>Choix de carrière (C)
             <br></br>
           (P/R à la profession)</h2>
@@ -147,25 +130,6 @@ const QuestionnaireMonProgramme = () => {
           <textarea />
         </div>
 
-        <br></br>
-        <div className="questionnaire-programme-container"></div>
-        <section className="titre-facteur">
-          <h2>Engagement et projets de vie (E)</h2>
-        </section>
-          <h2>Degré d'engagement dans les études et autres projets de vie</h2>
-          <p>Quels sont mes projets?</p>
-          <p>Quelles sont mes priotités dans la vie?</p>
-          {/* cercle */}
-          <ul>
-            <h6>Exemples:</h6>
-            <h6>A) Etudes</h6>
-            <h6>B) Emploi rémunéré</h6>
-            <h6>C) Famille, conjoint</h6>
-            <h6>D) Amis</h6>
-            <h6>E) Loisir</h6>
-            <h6>F) Exercice physique</h6>
-          </ul>
-
           <br></br>
         <div className="questionnaire-programme-container"></div>
         <section className="titre-facteur">
@@ -182,11 +146,11 @@ const QuestionnaireMonProgramme = () => {
         <h6>Aide pédagogique individuelle</h6>
         <h6>Service de consultation</h6>
         <h6>Cégep de Rivière-du-loup</h6>
-        <button onClick={handleGoToCompilation} className="next-button">
-        Retour a la compilation des résultat du questionnairemon choix
-      </button>
         <button onClick={handleGoToQuestionnaireMoyenpourReussir} className="next-button">
         Aller à Questionnaire moyen pour reussir
+      </button>
+        <button onClick={handleGoToCompilation} className="next-button">
+        Retour a la compilation des résultat du questionnairemon choix
       </button>
       </div>
     );

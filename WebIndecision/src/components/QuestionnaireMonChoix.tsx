@@ -1,7 +1,8 @@
-import './QuestionnaireMonChoix.css';
 import { useNavigate } from 'react-router-dom';
 import { ChangeEvent, useState } from 'react';
-import TuVaReussir from '../photo/TuVaReussir.png';
+import Resultat from '../photo/Resultat.png';
+import './QuestionnaireMonChoix.css';
+
 const QuestionnaireMonChoix = () => {
   const navigate = useNavigate();
 
@@ -787,8 +788,8 @@ const QuestionnaireMonChoix = () => {
           <p className="compteur-vrai">Total des réponses 'Vrai': {countTrueX}</p>
         </div>
         <p>Les énoncés sont regroupés par FACTEUR. pour chacun des facteurs, calcule le nombre de réponses "VRAI" et reporte tes résultats sur la fiche de compilation</p>
-        <div className="imageTuVaReussir">
-          <img src={TuVaReussir} alt="TuVaReussir" className="TuVaReussir" />
+        <div className="imageResultat">
+          <img src={Resultat} alt="Resultat" className="Resultat" />
         </div>
         <button onClick={handleGoToCompilation} className="next-button">
         Aller à la compilation des Résultats
