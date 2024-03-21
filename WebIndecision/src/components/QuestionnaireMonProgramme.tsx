@@ -7,8 +7,8 @@ const QuestionnaireMonProgramme = () => {
   const handleGoToQuestionnaireMoyenpourReussir = () => {
     navigate('/QuestionnaireMoyenPourReussir');
   };
-    const handleGoToQuestionnaireMonChoix = () => {
-      navigate('/QuestionnaireMonChoix');
+    const handleGoToCompilation = () => {
+      navigate('/Compilation');
   };
 
     return (
@@ -17,15 +17,13 @@ const QuestionnaireMonProgramme = () => {
         
         <div className="objectifs-rencontre">
           <h2>Objectifs de la rencontre :</h2>
-          <ul>
             <p>Faire le point sur ma situation personnelle depuis le début de mes études collégiales.</p>
             <p>Identifier les facteurs pouvant mener à l'indécision vocationnelle par rapport à mon choix de programme.</p>
             <p>Avoir des pistes pour diminuer l'inconfort, l'incertitude et apporter des changements.</p>
-          </ul>
         </div>
         
         <div className="section-facteurs">
-          <h3>Voici les facteurs qui causent l'indécision vocationnelle :</h3>
+          <p>Voici les facteurs qui causent l'indécision vocationnelle :</p>
         </div>
         <div className="questionnaire-programme-container"></div>
         <section className="titre-facteur">
@@ -33,10 +31,8 @@ const QuestionnaireMonProgramme = () => {
         </section>
           <h2>Transition secondaire-collégial</h2>
           <p>Il y a de nombreuses différences entre le secondaire et le collégial.</p>
-          <ul>
-            <p>-Comment est-ce que je vis ces changements?</p>
-            <p>-Est-ce que je vis également des changements dans ma vie personnelle et sociale?</p>
-          </ul>
+          <p>-Comment est-ce que je vis ces changements?</p>
+          <p>-Est-ce que je vis également des changements dans ma vie personnelle et sociale?</p>
           <div className="reponse-container">
           <textarea />
         </div>
@@ -46,22 +42,27 @@ const QuestionnaireMonProgramme = () => {
         <section className="titre-facteur">
           <h2>Soutien (S)</h2>
         </section>
-          <h2>famille, amis & enseignants</h2>
-          <p>Mes amis, mes proches et mes enseignants me soutiennent-ils?</p>
-          <p>Croient-ils en moi et en mon projet?</p>
-          <ul>
-            <p>Mon réseau:</p>
-          </ul>
-          <div className="reponse-container">
-          <textarea />
-          </div>
-          {/* Faire en sorte que ce soit a coté */}
-          <ul>
-            <p>Ce qu'ils disent de mon projet:</p>
-          </ul>
-          <div className="reponse-container">
-          <textarea />
-        </div>
+        <div className="S">
+  <div>
+    <h2>famille, amis & enseignants</h2>
+    <p>Mes amis, mes proches et mes enseignants me soutiennent-ils?</p>
+    <p>Croient-ils en moi et en mon projet?</p>
+    <div className="reponse-S">
+      <div>
+      <p>Mon réseau:</p>
+        <textarea />
+      </div>
+      <div>
+      <p>Ce qu'ils disent de mon projet:</p>
+        <textarea />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
         <br></br>
         <div className="questionnaire-programme-container"></div>
@@ -70,28 +71,20 @@ const QuestionnaireMonProgramme = () => {
         </section>
           <h2>Mon choix de programme est-il directement en lien avec mes intérêts, mes valeurs et aptitudes?</h2>
           <p>Est-ce que je ressens que mon programme fait du sens pour moi? Est-il possible pour moi d'envisager de travailler dans ce domaine et d'en retirer une satisfaction personnelle? Ai-je le profil du diplômé?</p>
-          <ul>
-            <p>J'aime:</p>
-          </ul>
-          <div className="reponse-container">
+          <div className="reponse-I">
+          <p>J'aime:</p>
           <textarea />
           </div>
-          <ul>
+          <div className="reponse-I">
             <p>Je suis capable de:</p>
-          </ul>
-          <div className="reponse-container">
           <textarea />
         </div>
-        <ul>
+        <div className="reponse-I">
             <p>Ce qui est important pour moi, c'est:</p>
-          </ul>
-          <div className="reponse-container">
           <textarea />
         </div>
-        <ul>
+        <div className="reponse-I">
             <p>je suis motivé par:</p>
-          </ul>
-          <div className="reponse-container">
           <textarea />
         </div>
 
@@ -102,9 +95,7 @@ const QuestionnaireMonProgramme = () => {
         </section>
           <h2>Connaissance de la profession et du marché du travail</h2>
           <p>Depuis le debut de la session, mes enseignants m'ont présenté le contenu des cours du programme, j'ai visité des services de garde, j'ai fait des observations au centre de la petite enfance 'Le Jardin'. De plus, j'ai entendu des témoignages (parents et enfants) et effectué des travaux pratiques dans le cours d'introduction à la profession.</p>
-          <ul>
             <p>Ce que je pense du métier est positif ou négatif? Pourquoi?</p>
-          </ul>
           <div className="reponse-container">
           <textarea />
         </div>
@@ -117,7 +108,6 @@ const QuestionnaireMonProgramme = () => {
           <h2>Efficaté personnelle dans le métier d'étudiant</h2>
           <p>Quel est mon degré d'aisance face à la charge de travail et aux exigences demandées? Est-ce que je me sens capable de réussir? Suis-je prêt à m'investir et à fournir les efforts nécessaires pour réussir mes cours? Est-ce que j'utilise les bonnes méthodes de travail pour moi? Ai-je recours aux enseignants lorsque je ne comprend pas? Ai-je besoin de m'adapter à l'approche pédagogique utilisée dans certains cours?</p>
           {/* barre de satisfaction */}
-          <ul>
             <h6>Exemples:</h6>
             <h6>A) Ma gestion du temps est-elle efficace?</h6>
             <h6>B) Ma gestion du stress?</h6>
@@ -126,7 +116,6 @@ const QuestionnaireMonProgramme = () => {
             <h6>E) J'étudie de 2 à 3 semaines avant un examen?</h6>
             <h6>F) Suis-je bien organisé (agenda, cartable, planification de la session)?</h6>
             <h6>G) Mon temps d'études est-il suffisant?</h6>
-          </ul>
 
         <br></br>
         <div className="questionnaire-programme-container"></div>
@@ -193,8 +182,8 @@ const QuestionnaireMonProgramme = () => {
         <h6>Aide pédagogique individuelle</h6>
         <h6>Service de consultation</h6>
         <h6>Cégep de Rivière-du-loup</h6>
-        <button onClick={handleGoToQuestionnaireMonChoix} className="next-button">
-        Retour au Questionnaire mon choix
+        <button onClick={handleGoToCompilation} className="next-button">
+        Retour a la compilation des résultat du questionnairemon choix
       </button>
         <button onClick={handleGoToQuestionnaireMoyenpourReussir} className="next-button">
         Aller à Questionnaire moyen pour reussir

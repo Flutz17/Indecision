@@ -1,4 +1,4 @@
-.questionnaire-page {
+  .questionnaire-page {
     font-family: Arial, sans-serif;
     padding: 20px;
   }
@@ -67,3 +67,52 @@
     line-height: 0px;
   }
   
+  p{
+    text-align: justify;
+  }
+  
+  .section-facteurs p {
+    text-align: center;
+  }
+
+  .S {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .reponse-S {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .reponse-S div {
+    flex-direction: column;
+    margin: 10px;
+  }
+  
+  .reponse-S div p {
+    margin-bottom: 5px;
+  }
+  
+  .reponse-S textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    background: #ffffff;
+    color: #000000;
+  }
+  
+
+  .reponse-I {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .reponse-I textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    background: #ffffff;
+    color: #000000;
+  }

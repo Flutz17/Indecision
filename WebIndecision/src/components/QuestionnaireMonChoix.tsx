@@ -5,9 +5,21 @@ import TuVaReussir from '../photo/TuVaReussir.png';
 const QuestionnaireMonChoix = () => {
   const navigate = useNavigate();
 
-  const handleGoToQuestionnaireMonProgramme = () => {
-    navigate('/QuestionnaireMonProgramme');
+  const handleGoToCompilation = () => {
+    const results = {
+      I: countTrueI,
+      S: countTrueS,
+      M: countTrueM,
+      O: countTrueO,
+      C: countTrueC,
+      T: countTrueT,
+      A: countTrueA,
+      E: countTrueE,
+      X: countTrueX
+    };
+    navigate('/compilation', { state: results });
   };
+  
   const [countTrueI, setCountTrueI] = useState(0);
   const [countTrueS, setCountTrueS] = useState(0);
   const [countTrueM, setCountTrueM] = useState(0);
@@ -24,7 +36,7 @@ const QuestionnaireMonChoix = () => {
     setCountTrueI((prevCount) =>
       value === 'true' && checked
         ? prevCount + 1
-        : prevCount - 1
+        : prevCount - (prevCount ? 1 : 0)
     );
   };
 
@@ -33,7 +45,7 @@ const QuestionnaireMonChoix = () => {
     setCountTrueS((prevCount) =>
       value === 'true' && checked
         ? prevCount + 1
-        : prevCount - 1
+        : prevCount - (prevCount ? 1 : 0)
     );
   };
 
@@ -42,7 +54,7 @@ const QuestionnaireMonChoix = () => {
     setCountTrueM((prevCount) =>
       value === 'true' && checked
         ? prevCount + 1
-        : prevCount - 1
+        : prevCount - (prevCount ? 1 : 0)
     );
   };
 
@@ -51,7 +63,7 @@ const QuestionnaireMonChoix = () => {
     setCountTrueO((prevCount) =>
       value === 'true' && checked
         ? prevCount + 1
-        : prevCount - 1
+        : prevCount - (prevCount ? 1 : 0)
     );
   };
 
@@ -60,7 +72,7 @@ const QuestionnaireMonChoix = () => {
     setCountTrueC((prevCount) =>
       value === 'true' && checked
         ? prevCount + 1
-        : prevCount - 1
+        : prevCount - (prevCount ? 1 : 0)
     );
   };
 
@@ -69,7 +81,7 @@ const QuestionnaireMonChoix = () => {
     setCountTrueT((prevCount) =>
       value === 'true' && checked
         ? prevCount + 1
-        : prevCount - 1
+        : prevCount - (prevCount ? 1 : 0)
     );
   };
 
@@ -78,7 +90,7 @@ const QuestionnaireMonChoix = () => {
     setCountTrueA((prevCount) =>
       value === 'true' && checked
         ? prevCount + 1
-        : prevCount - 1
+        : prevCount - (prevCount ? 1 : 0)
     );
   };
 
@@ -87,7 +99,7 @@ const QuestionnaireMonChoix = () => {
     setCountTrueE((prevCount) =>
       value === 'true' && checked
         ? prevCount + 1
-        : prevCount - 1
+        : prevCount - (prevCount ? 1 : 0)
     );
   };
   const trueX = (e : ChangeEvent<HTMLInputElement>) => {
@@ -95,7 +107,7 @@ const QuestionnaireMonChoix = () => {
     setCountTrueX((prevCount) =>
       value === 'true' && checked
         ? prevCount + 1
-        : prevCount - 1
+        : prevCount - (prevCount ? 1 : 0)
     );
   };
   return (
@@ -778,8 +790,8 @@ const QuestionnaireMonChoix = () => {
         <div className="imageTuVaReussir">
           <img src={TuVaReussir} alt="TuVaReussir" className="TuVaReussir" />
         </div>
-        <button onClick={handleGoToQuestionnaireMonProgramme} className="next-button">
-        Aller à Questionnaire Mon Programme
+        <button onClick={handleGoToCompilation} className="next-button">
+        Aller à la compilation des Résultats
       </button>
       </main>
     </div>
