@@ -1,0 +1,137 @@
+@hostname = localhost
+@port = 3000
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+//Aller chercher l'application TOKEN valide en utilisant l'action POST getAppToken
+
+@applicationTOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmFtZSI6IjIxMzEzMTciLCJpYXQiOjE3MTE0Mjk4MjV9.2coBRK6k0FlY7woe9FEon5O73N2Gg2od4IuvmGarV2w
+@BearerTOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJudW1lcm8iOnsibnVtZXJvIjoiMDAwMDAwMSJ9LCJpYXQiOjE3MTE0Mjk4NDUsImV4cCI6MTcxMjAzNDY0NX0.htRGQTiJ8oMbyMbblA-zf0gJwcMVi3eIu7eYmrWXZBk
+@BearerRefreshTOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoidXNlciIsImVtYWlsIjoiYWxhaW4uZHViZUBjZWdlcHJkbC5jYSIsImlhdCI6MTcwNzkzNzkwMywiZXhwIjoxNzA4NTQyNzAzfQ.M6aqOKrHBkZRyA0MOZtp1XnrxWOQTtwk7A9gDNiu8t0
+
+
+###
+GET http://{{host}}/
+
+
+###
+GET http://{{host}}/api
+
+
+###
+GET http://{{host}}/api/welcome
+Authorization: Bearer {{BearerTOKEN}}
+Content-Type:{{contentType}}
+
+
+###
+DELETE http://{{host}}/api/auth/resetAll
+Content-Type:{{contentType}}
+
+{
+    "appKey": "{{applicationTOKEN}}",
+    "numero":"2131317",
+    "pass":"123456789"
+  }
+  
+###
+POST http://{{host}}/api/auth/getAppToken
+Content-Type:{{contentType}}
+
+{
+    "numero":"2131317",
+    "pass":"123456789"
+  }
+
+
+
+###
+POST http://{{host}}/api/auth/register
+Content-Type:{{contentType}}
+Authorization: Bearer {{BearerTOKEN}}
+
+{
+    "appKey": "{{applicationTOKEN}}",
+    "id": "002",
+    "numero": "3121218",
+    "password": "password",
+    "nom": "Williams",
+    "prenom": "Angélique",
+    "Questionnaires": {
+        "monProgrammeEtudes": [
+            {
+                "id": "001",
+                "facteur": "T",
+                "reponse": "j'arrive a m'habituer rapidement"
+            },
+            {
+                "id": "002",
+                "facteur": "S",
+                "reponse": "tout le monde croit en moi"
+            },
+            {
+                "id": "003",
+                "facteur": "I",
+                "reponse": "tout est bon pour moi"
+            },
+            {
+                "id": "004",
+                "facteur": "M",
+                "reponse": "tout est bon pour moi"
+            },
+            {
+                "id": "005",
+                "facteur": "O",
+                "reponse": "j'ai peur de tout rater"
+            },
+            {
+                "id": "006",
+                "facteur": "C",
+                "reponse": "je sais ce que je veux"
+            },
+            {
+                "id": "007",
+                "type": "A",
+                "reponse": "je sais ce que je veux"
+            },
+            {
+                "id": "008",
+                "facteur": "E",
+                "reponse": "je veux créer des jeux vidéo"
+            },
+            {
+                "id": "009",
+                "facteur": "X",
+                "reponse": "je vais bien, enfin je crois"
+            }
+        ],
+        "monChoixProgramme": {
+            "reponsesPositives": ["021", "022", "023", "024", "025"],
+            "reponsesNegatives": ["001", "002", "003", "004", "005"]
+        },
+        "moyensPourReussir": {
+            "actionReponses": ["001", "002", "003", "004", "005"],
+            "ressourcesReponses": ["021", "022", "023", "024", "025"]
+        }
+    }
+}
+
+###
+POST http://{{host}}/api/auth/login
+Content-Type:{{contentType}}
+
+{
+"appKey": "{{applicationTOKEN}}",
+"pass":"password",
+"numero":"3121218"
+}
+
+
+###
+POST http://{{host}}/api/auth/login
+Content-Type:{{contentType}}
+
+{
+  "appKey": "{{applicationTOKEN}}",
+  "pass":"secretPassword",
+  "numero":"0000001"
+}

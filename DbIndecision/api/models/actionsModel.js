@@ -11,7 +11,7 @@ var url = global.gConfig.databaseUrl + dbname;
 var mongoose = require("mongoose");
 mongoose.connect(url,{ useNewUrlParser: true, useUnifiedTopology: true });
 
-var indecisionSchema = new mongoose.Schema({
+var actionSchema = new mongoose.Schema({
     "id": {
         "type": "String"
     },
@@ -23,6 +23,6 @@ var indecisionSchema = new mongoose.Schema({
     }
     });
 
-  var mongooseAction = mongoose.model("action", indecisionSchema);
+  var mongooseAction = mongoose.model("action", actionSchema);
 
   module.exports = mongooseAction;

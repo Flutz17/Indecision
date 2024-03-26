@@ -11,7 +11,7 @@ var url = global.gConfig.databaseUrl + dbname;
 var mongoose = require("mongoose");
 mongoose.connect(url,{ useNewUrlParser: true, useUnifiedTopology: true });
 
-var indecisionSchema = new mongoose.Schema({
+var questionnaire_monChoixSchema = new mongoose.Schema({
     "titre": {
         "type": "String"
     },
@@ -47,6 +47,6 @@ var indecisionSchema = new mongoose.Schema({
     }
     });
 
-  var mongooseQuestionnaire_monChoix = mongoose.model("questionnaire_monChoix", indecisionSchema);
+  var mongooseQuestionnaire_monChoix = mongoose.model("questionnaire_monChoix", questionnaire_monChoixSchema);
 
   module.exports = mongooseQuestionnaire_monChoix;
