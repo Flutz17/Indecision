@@ -1,4 +1,4 @@
-const mongooseAction = require("../models/actionsModel");
+const mongooseRessource = require("../models/ressourcesModel");
 
 var express = require("express"),
   app = express(),
@@ -6,14 +6,14 @@ var express = require("express"),
 app.use(express.json());
 
 exports.clearAll = function (req, res) {
-    mongooseAction
+    mongooseRessource
     .deleteMany({})
     .then(() => {
-      console.log("les actions sont supprimer");
-      return res.status(200).json({ message: "les actions sont supprimer" });
+      console.log("les ressources sont supprimer");
+      return res.status(200).json({ message: "les ressources sont supprimer" });
     })
     .catch((err) => {
-      console.log("Error sur l'effacement des actions: " + err);
+      console.log("Error sur l'effacement des ressources: " + err);
       res.status(500).json({ message: "An unknown error has occured" });
     });
 };
@@ -25,20 +25,20 @@ exports.add = async function (req, res) {
 
     for (let jSonObj of arrayJsonObj) {
       console.log(jSonObj);
-      const existingAction = await mongooseAction.findOne({ action: jSonObj.action });
-      console.log(existingAction);
-      if (!existingAction) {
+      const existingRessource = await mongooseRessource.findOne({ ressource: jSonObj.ressource });
+      console.log(existingRessource);
+      if (!existingRessource) {
 
         console.log(jSonObj);
 
-        var actionObj = new mongooseAction(jSonObj);
-        await mongooseAction.create(actionObj).then((result) => {
-          console.log("Action inserer: " + actionObj.action);
+        var ressourceObj = new mongooseRessource(jSonObj);
+        await mongooseRessource.create(ressourceObj).then((result) => {
+          console.log("Ressource inserer: " + ressourceObj.ressource);
         });
         itemsAdded++;
       }
     }
-    res.status(200).json({ message: itemsAdded + " Action(s) inserer" });
+    res.status(200).json({ message: itemsAdded + " Ressource(s) inserer" });
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: "Erreur de traitement" });
@@ -47,12 +47,12 @@ exports.add = async function (req, res) {
 };
 
 exports.getAll = function (req, res) {
-  mongooseAction
-    .find({}, { _id: 1, type: 1, action: 1})
-    .sort({ action: "asc" })
+  mongooseRessource
+    .find({}, { id: 1, type: 1, ressource: 1})
+    .sort({ ressource: "asc" })
     .exec()
     .then((db) => {
-      console.log("\t  Contenu de la base de données action:\n");
+      console.log("\t  Contenu de la base de données ressource:\n");
       res.status(200).json(db);
     })
     .catch((err) => {
@@ -69,12 +69,12 @@ function isNumeric(str) {
 exports.get = function (req, res) {
   var reqq = isNumeric(req.params.id)
     ? { id: req.params.id }
-    : { action: req.params.id };
-  mongooseAction
+    : { ressource: req.params.id };
+  mongooseRessource
     .find(reqq)
     .exec()
     .then((db) => {
-      console.log("\t  Contenu de la base de données actions:\n", db);
+      console.log("\t  Contenu de la base de données ressources:\n", db);
       res.status(200).json(db);
     })
     .catch((err) => {
@@ -87,19 +87,19 @@ exports.get = function (req, res) {
 exports.delete = function (req, res) {
   var reqq = isNumeric(req.params.id)
     ? { id: req.params.id }
-    : { action: req.params.id };
-  mongooseAction
+    : { ressource: req.params.id };
+  mongooseRessource
     .findOneAndDelete(reqq)
     .then((db) => {
       if (!db) {
-        console.log("Action n'existe pas: " + req.params.id);
-        return res.status(410).json({ message: "Action n'existe pas" });
+        console.log("Ressource n'existe pas: " + req.params.id);
+        return res.status(410).json({ message: "Ressource n'existe pas" });
       }
-      console.log("l'action a bien été supprimer" + req.params.id);
-      res.status(200).json({ message: "l'action a bien été supprimer" });
+      console.log("l'ressource a bien été supprimer" + req.params.id);
+      res.status(200).json({ message: "l'ressource a bien été supprimer" });
     })
     .catch((err) => {
-      console.error("erreur lier avec l'action: " + err);
+      console.error("erreur lier avec l'ressource: " + err);
       res.status(500).json({ error: "An unknown error has occured" });
     });
 };

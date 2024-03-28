@@ -11,13 +11,11 @@ var url = global.gConfig.databaseUrl + dbname;
 var mongoose = require("mongoose");
 mongoose.connect(url,{ useNewUrlParser: true, useUnifiedTopology: true });
 
-var questionnaire_monChoixSchema = new mongoose.Schema({
+var monChoixSchema = new mongoose.Schema({
     "titre": {
         "type": "String"
     },
     "directive": {
-        "type": "jsonObject",
-        "properties": {
 
             "titre": {
                 "type": "String"
@@ -28,14 +26,11 @@ var questionnaire_monChoixSchema = new mongoose.Schema({
             "but": {
                 "type": "String"
             }
-    }
     },
     "piedPage": {
         "type": "String"
     },
-    "questions": {
-        "type": ["jsonObject"],
-        "properties": {
+    "questions": [{
 
             "facteur": {
                 "type": "String"
@@ -43,10 +38,9 @@ var questionnaire_monChoixSchema = new mongoose.Schema({
             "questions": {
                 "type": ["String"]
             }
-    }
-    }
+    }]
     });
 
-  var mongooseQuestionnaire_monChoix = mongoose.model("questionnaire_monChoix", questionnaire_monChoixSchema);
+  var mongoosemonChoix = mongoose.model("monChoix", monChoixSchema, "monChoix");
 
-  module.exports = mongooseQuestionnaire_monChoix;
+  module.exports = mongoosemonChoix;

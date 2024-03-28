@@ -1,0 +1,375 @@
+//Rest API Panel
+//Version 1.0 (Rino Gamache, Samuel Dumont)
+//Plug-IN : vscode-restclient (Huachao)
+//   https://github.com/Huachao/vscode-restclient
+@hostname = localhost
+@port = 3000
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+@applicationTOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmFtZSI6ImFkbWluQGNlZ2VwcmRsLmNhIiwiaWF0IjoxNzEwNDIwNzQyfQ.zdjzgFD008ScyG2h77iWPZ4h4xbWAtSKtYOEHMZ2kRs
+@BearerTOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJudW1lcm8iOnsibnVtZXJvIjoiMzEyMTIxOCJ9LCJpYXQiOjE3MTE1ODkwNjUsImV4cCI6MTcxMjE5Mzg2NX0.XAwqEs3DGbWOLOagYX4xKMIFn9rgMR3UI94QYK4kRU4
+
+
+###
+GET http://{{host}}/
+
+###
+GET http://{{host}}/api
+
+//Partie d'autentification
+###
+GET http://{{host}}/api/auth
+
+//Partie des ressources sur les types de Ingredient
+###
+GET http://{{host}}/api/ressources/
+
+###
+GET http://{{host}}/api/ressources/getAll
+Content-Type:{{contentType}}
+Authorization: Bearer {{BearerTOKEN}}
+
+###
+DELETE  http://{{host}}/api/ressources/clearAll
+Content-Type:{{contentType}}
+Authorization: Bearer {{BearerTOKEN}}
+
+###
+GET http://{{host}}/api/ressources/get/001
+Content-Type: application/json
+Authorization: Bearer {{BearerTOKEN}}
+
+###
+DELETE  http://{{host}}/api/ressources/DELETE/001
+Content-Type: application/json
+Authorization: Bearer {{BearerTOKEN}}
+
+###
+POST http://{{host}}/api/ressources/add
+Content-Type:{{contentType}}
+Authorization: Bearer {{BearerTOKEN}}
+
+{
+    "id": "001",	
+    "type" : "G",
+    "ressource": "Consulter le document 'La gestion du temps' disponible au service de consultation (B-157);"
+    }
+###
+
+POST http://{{host}}/api/ressources/add
+Content-Type:{{contentType}}
+Authorization: Bearer {{BearerTOKEN}}
+
+ [
+    {
+    "id": "001",	
+    "type" : "G",
+    "ressource": "Consulter le document 'La gestion du temps' disponible au service de consultation (B-157);"
+    },
+    {
+    "id": "002",	
+    "type" : "G",
+    "ressource": "Consulter le livre 'Oubliez la gestion du temps, gérez vos priorités' de François Lavallée disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=126285"
+    },
+    {
+    "id": "003",	
+    "type" : "G",
+    "ressource": "Consulter le livre 'Petit guide de survie des étudiants' de Marie Lambert-Chan disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=58311"
+    },
+    {
+    "id": "004",	
+    "type" : "G",
+    "ressource": "Demander à mon API de consulter le guide 'La concentration et la gestion du temps';"
+    },
+    {
+    "id": "005",	
+    "type" : "G",
+    "ressource": "Consulter le document 'La concentration et la gestion du temps' disponible sur le site du Centre d'aide aux étudiants de l'Université Laval, dans les références : https://www.aide.ulaval.ca/apprentissage-et-reussite/textes-et-outils/strategies-d-apprentissage/la-gestion-du-temps/"
+    },
+
+
+    {
+    "id": "006",	
+    "type" : "M",
+    "ressource": "Consulter le livre 'Décrocher son diplóme (et l'emploi de ses rêves!): comment maîtriser les compétences essentielles menant au succès à l'école, au travail et dans la vie' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=126958"
+    },
+    {
+    "id": "007",	
+    "type" : "M",
+    "ressource": "Consulter le livre 'La méthode infaillible pour réussir vos études' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=114790"
+    },
+    {
+    "id": "008",	
+    "type" : "M",
+    "ressource": "Consulter le livre 'l'essentiel pour reussir ses études' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=127017"
+    },
+    {
+    "id": "009",	
+    "type" : "M",
+    "ressource": "Consulter le livre 'La prise de notes efficace pour étudiants : Des notes inteligentes et opérationnelles !' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=154249"
+    },
+    {
+    "id": "010",	
+    "type" : "M",
+    "ressource": "Demander à son API de consulter le guide : -'L'écoute en classe et la prise de notes'; -'La lecture active et la mémorisation'; -'La préparation aux examens et les examens'; - 'Les travaux long'."
+    },
+
+
+    {
+    "id": "011",	
+    "type" : "S",
+    "ressource": "Consulter le livre :'Mindfulness : apprivoiser le stress par la pleine conscience : une introduction aux approches basées sur la pleine conscience' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=54311"
+    },
+    {
+    "id": "012",	
+    "type" : "S",
+    "ressource": "Consulter le livre :'Pourquoi je stresse : les 6 couleurs de mon stress.' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=62531"
+    },
+    {
+    "id": "013",	
+    "type" : "S",
+    "ressource": "Consulter le livre :'Communiquer en public sans anxiété' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=151749"
+    },
+    {
+    "id": "014",	
+    "type" : "S",
+    "ressource": "Consulter le livre :'Les 5 clés pour se libérer du stress.' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=154869"
+    },
+    {
+    "id": "015",	
+    "type" : "S",
+    "ressource": "Consulter Marie-Josée Henry ou Suzanne Marquis au Centre de santé G-206;"
+    },
+    {
+    "id": "016",	
+    "type" : "S",
+    "ressource": "Demander à mon API de consulter le guide 'Les exposés oraux'"
+    },
+
+
+
+    {
+    "id": "017",	
+    "type" : "I",
+    "ressource": "Consulter le livre :'Savoir s'affirmer en toutes circonstances.' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=54511"
+    },
+    {
+    "id": "018",	
+    "type" : "I",
+    "ressource": "Consulter le livre :'Affirmez-vous : pour mieux vivre avec les autres' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=24921"
+    },
+    {
+    "id": "019",	
+    "type" : "I",
+    "ressource": "Consulter le livre :'S'affirmer pour changer : cheminer vers l'assertivité et l'affirmation de soi.' disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=163022"
+    },
+    {
+    "id": "020",	
+    "type" : "I",
+    "ressource": "Consulter Marie-Josée Henry ou Suzanne Marquis au Centre de santé G-206"
+    },
+    {
+    "id": "021",	
+    "type" : "I",
+    "ressource": "Consulter un conseiller au service de consultation (B-157)"
+    },
+
+
+    {
+    "id": "022",	
+    "type" : "O",
+    "ressource": "Entreprendre une démarche d'orientation avec une conseillère d'orientation du service de consultation"
+    },
+    {
+    "id": "023",	
+    "type" : "O",
+    "ressource": "Consulter le centre de documentation du service de consultation au B-157"
+    },
+    {
+    "id": "024",	
+    "type" : "O",
+    "ressource": "Consulter le site Internet du Collège (www.cegep-rdl.qc.ca) à Carrière et emplois, ensuite des sites 'carrières'. Une panoplie d'information est à ma disposition (liens vers les sites Web des établissements d'enseignement postsecondaire et des liens vers des sites d'exploration de carrières et du marché du travail)"
+    },
+    {
+    "id": "025",	
+    "type" : "O",
+    "ressource": "Discuter avec mes professeurs de mon orientation de carrière (débouchés du programme de formation dans lequel je me suis inscris, etc.)"
+    },
+    {
+    "id": "026",	
+    "type" : "O",
+    "ressource": "Consulter le livre: Bien choisir sa trajectoire professionnelle. Disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=123237"
+    },
+    {
+    "id": "027",	
+    "type" : "O",
+    "ressource": "Consulter le livre: Et si je trouvais enfin ce que je veux faire de ma vie?: Mon carnet orientation & vocation. Les 20 questions à te poser pour trouver et prendre ta place professionnellement. Disponible à la bibliothèque : https://rdl.koha.collecto.ca/cgi-bin/koha/opac-detail.pl?biblionumber=88865322"
+    },
+
+
+    {
+    "id": "028",	
+    "type" : "T",
+    "ressource": "Consulter Marie-Josée Henry ou Suzanne Marquis au Centre de santé G-206: Si j'ai de la difficulté à briser mon isolement."
+    },
+    {
+    "id": "029",	
+    "type" : "T",
+    "ressource": "Consulter le Service de consultation au B-157: Si j'ai de la difficulté à m'adapter aux études collégiales."
+    },
+    {
+    "id": "030",	
+    "type" : "T",
+    "ressource": "Consulter le centre sportif: Information et inscription à des activités parascolaires (Stéphane Lebrun, D-019)."
+    },
+    {
+    "id": "031",	
+    "type" : "T",
+    "ressource": "Faire appel à Francois Provost (G-004), responsable de la vie étudiante: Pour connaître les activités étudiantes régulières."
+    },
+    {
+    "id": "032",	
+    "type" : "T",
+    "ressource": "Consulter les renseignements utiles disponibles dans l'agenda."
+    },
+    {
+    "id": "033",	
+    "type" : "T",
+    "ressource": "L'AGE du collège: Divers comités et services à ta disposition."
+    },
+    {
+    "id": "034",	
+    "type" : "T",
+    "ressource": "Rendre visite à l'animateur de pastorale Guy Paradis (G-035)."
+    },
+
+
+
+    {
+    "id": "035",	
+    "type" : "P",
+    "ressource": "Consulter le Service de consultation au B-157: personne ressources et exercices."
+    },
+    {
+    "id": "036",	
+    "type" : "P",
+    "ressource": "Demander à mon API de consulter le guide 'La motivation'"
+    },
+
+
+
+    {
+    "id": "037",	
+    "type" : "E",
+    "ressource": "Prendre rendez-vous avec mon API."
+    },
+    {
+    "id": "038",	
+    "type" : "E",
+    "ressource": "Demander à mon API de consulter le guide 'Surmonter la procrastination scolaire'"
+    },
+
+
+
+    {
+    "id": "039",	
+    "type" : "A",
+    "ressource": "Consulter mes enseignants;"
+    },
+    {
+    "id": "040",	
+    "type" : "A",
+    "ressource": "Consulter mon aide pédagogique."
+    },
+    {
+    "id": "041",	
+    "type" : "A",
+    "ressource": "Assister à des rencontres avec les centres d'aide (ex.: français,...)"
+    },
+
+
+    {
+    "id": "042",	
+    "type" : "R",
+    "ressource": "Rencontrer mon aide pédagogique ou un conseiller d'orientation;"
+    },
+    {
+    "id": "043",	
+    "type" : "R",
+    "ressource": "Consulter le responsable de mon programme en cas de conflit ou de difficultés;"
+    },
+    {
+    "id": "044",	
+    "type" : "R",
+    "ressource": "L'AGE si j'ai un conflit avec un professeur;"
+    },
+    {
+    "id": "045",	
+    "type" : "R",
+    "ressource": "Participer à des activités extra-scolaires pour parfaire mes relations avec mes professeurs."
+    },
+
+
+
+    {
+    "id": "046",	
+    "type" : "F",
+    "ressource": "Participer à des activités sportives, culturelles, etc;"
+    },
+    {
+    "id": "047",	
+    "type" : "F",
+    "ressource": "Consulter Marie-Josée Henry ou Suzanne Marquis au Centre de santé (G-206); des personnes-ressources sont là pour moi."
+    },
+
+
+    {
+    "id": "048",	
+    "type" : "C",
+    "ressource": "Faire le point sur ma situation avec mon aide pédagogique;"
+    },
+    {
+    "id": "049",	
+    "type" : "C",
+    "ressource": "Consulter Marie-Josée Henry ou Suzanne Marquis au Centre de santé (G-206); des personnes-ressources sont là pour moi."
+    },
+
+
+    {
+    "id": "050",	
+    "type" : "Y",
+    "ressource": "Consulter Marie-Josée Henry ou Suzanne Marquis au Centre de santé (G-206); infirmière, nutritionniste (pour un bilan de santé et des conseils);"
+    },
+    {
+    "id": "051",	
+    "type" : "Y",
+    "ressource": "Rencontrer mon aide pédagogique: conciliation horaire de cours et de vie;"
+    },
+    {
+    "id": "052",	
+    "type" : "Y",
+    "ressource": "Consulter le centre sportif: information et inscription à des activités parascolaires (Stéphane Lebrun, D-019);"
+    },
+
+
+
+    {
+    "id": "053",	
+    "type" : "¥",
+    "ressource": "Consulter Marie-Josée Henry ou Suzanne Marquis au Centre de santé (G-206); des personnes-ressources et de la documentation. Il n'y a pas de honte à penser à son équilibre!"
+    },
+
+
+    {
+    "id": "054",	
+    "type" : "$",
+    "ressource": "Consulter Sylvie Roussignol au Service d'aide financière (Prêts & bourses) au local B-147;"
+    },
+    {
+    "id": "055",	
+    "type" : "$",
+    "ressource": "Faire appel à Sylvie Roussignol (B-147) pour avoir recours à du dépannage alimentaire, etc."
+    }
+]
+
+

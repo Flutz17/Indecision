@@ -165,10 +165,14 @@ var authRoutes = require("./api/routes/authRoutes.js");
 app.use("/api/auth", authRoutes);
 
 var logRoutes = require("./api/routes/logRoutes.js");
-var actionRoutes = require("./api/routes/actionRoutes.js");
+var actionsRoutes = require("./api/routes/actionsRoutes.js");
+var ressourcesRoutes = require("./api/routes/ressourcesRoutes.js");
+var monChoixRoutes = require("./api/routes/monChoixRoutes.js");
 
 app.use("/api/log", logRoutes);
-app.use("/api/actions", actionRoutes);
+app.use("/api/actions", actionsRoutes);
+app.use("/api/ressources", ressourcesRoutes);
+app.use("/api/monChoix", monChoixRoutes);
 
 //Route par défaut
 app.get("/", (req, res) => {
